@@ -1,0 +1,5 @@
+gem 'sinatra'
+gem 'figaro'
+gem 'faraday'
+gem 'pry'
+gem 'rspec'
