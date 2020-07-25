@@ -10,6 +10,13 @@ GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
     end
     body = JSON.parse(response.body, symbolize_names: true)
   end
+  
+  def get_games_by_id(game_id)
+    response = conn.get('/games') do |res|
+      res.body = "fields *; where id = #{game_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
 
   def get_games_by_keywords(ids)
     id_list =  ids.join(",")
@@ -23,7 +30,7 @@ GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def get_keyword(word)
+  def get_keyid(word)
     response = conn.get("/keywords") do |res|
       res.body = "fields id, name; where name = \"#{word}\";" 
     end
@@ -36,6 +43,57 @@ GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
     end
     body = JSON.parse(response.body, symbolize_names: true)
   end
+
+  def get_game_themes(theme_id)
+    response = conn.get("/themes") do |res|
+      res.body = "fields *; where id = #{theme_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_game_genres(genre_id)
+    response = conn.get("/genres") do |res|
+      res.body = "fields *; where id = #{genre_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_platforms(platform_id)
+    response = conn.get("/platforms") do |res|
+      res.body = "fields *; where id = #{platform_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_screenshots(screenshot_id)
+    response = conn.get("/screenshots") do |res|
+      res.body = "fields *; where id = #{screenshot_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_release_date(date_id)
+    response = conn.get("/release_dates") do |res|
+      res.body = "fields *; where id = #{date_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_cover(cover_id)
+    response = conn.get("/covers") do |res|
+      res.body = "fields *; where id = #{cover_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def get_age_ratings(age_rating_id)
+    response = conn.get("/age_ratings") do |res|
+      res.body = "fields *; where id = #{age_rating_id};"
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  
 
   private
 

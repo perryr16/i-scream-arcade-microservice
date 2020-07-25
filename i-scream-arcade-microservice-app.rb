@@ -1,33 +1,38 @@
 require 'sinatra'
+require 'sinatra/json'
+require 'json'
 require 'faraday'
 require 'pry'
 require './services/game_service'
 require './poros/game_results'
 
+# require './serializers/keyword_serializer'
+
+# before do
+#  content_type :json
+# end
 
 # game_title = "Mario$20Kart%2064"
+results = GameResults.new
+
 get '/game/:game_title' do
-
-  results = GameResults.new
-
-  results.game_params_by_name(params[:game_title]).to_json
-
+  json results.game_params_by_name(params[:game_title])
 end
 
-var = 'dog'
-get "/cats/:name" do
-  binding.pry
-  "meeeeooowww"
+get '/keyword/:keyword' do 
+  json body results.keyword_id(params[:keyword])
 end
 
-# require 'sinatra'
-get '/hello' do 
-  status 200 
-  {message: 'hellow world!'}.to_json
+get '/dog' do 
+  body 'what up dog'
 end
-get '/' do 
-  'what up dogs'
-end
-get '/dogs' do 
-  'What up dog'
-end
+
+# get '/foo' do
+#   body "bar"
+# end
+
+# after do
+#   puts body
+# end
+
+
