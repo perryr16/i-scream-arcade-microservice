@@ -26,6 +26,16 @@ RSpec.describe IScreamMicroservice do
     expect(last_response.body).to include(exp_word)
   end
 
+  it "returns the keyword of key id" do
+    get '/keyid/16'
+
+    exp_id  = "\"id\":16"
+    exp_word  = "\"name\":\"ghosts\""
+
+    expect(last_response.body).to include(exp_id)
+    expect(last_response.body).to include(exp_word)
+  end
+
   it "returns game information from exact match" do
     get "/game/Mario%20Kart%2064"
 

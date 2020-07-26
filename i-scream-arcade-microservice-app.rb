@@ -24,7 +24,7 @@ class IScreamMicroservice < Sinatra::Base
   end
   
   get '/keyword/:keyword' do 
-    json body results.keyword_id(params[:keyword])
+    json results.keyword_id(params[:keyword])
   end
   
   get '/keyid/:keyid' do 

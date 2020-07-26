@@ -9,7 +9,7 @@ class GameResults
     params = service.get_games_by_name(game_name)[0]
     result = {data: {
       age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), # array of ids
-      release_date: Time.at(params[:first_release_date]).year, # id
+      release_date: Time.at(params[:first_release_date]).year, # Unix Time
       cover:        cover_url(params[:cover]),
       popularity:   params[:popularity], # good
       summary:      params[:summary], # good
