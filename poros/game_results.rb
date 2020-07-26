@@ -10,7 +10,7 @@ class GameResults
     result = {data: {
       age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), # array of ids
       release_date: Time.at(params[:first_release_date]).year, # Unix Time
-      cover:        cover_url(params[:cover]),
+      cover:        "https:#{cover_url(params[:cover])}",
       popularity:   params[:popularity], # good
       summary:      params[:summary], # good
       name:         params[:name], # good
@@ -20,9 +20,9 @@ class GameResults
       keywords:     params[:keywords], # array of ids -- several hundred :(
       platforms:    run_array(:get_platforms, :name, params[:platforms]), # array of ids
       similars:     run_array(:get_games_by_id, :name, params[:similar_games]), # array of ids
-      screenshots:  run_array(:get_screenshots, :url, params[:screenshots]), # array of ids
+      screenshots:  format_screenshots(params), # array of ids
       themes:       run_array(:get_game_themes, :name, params[:themes]), # array of ids
-      videos:       youtube_id(params[:videos][0]) # good -> array of ids
+      videos:       "https://www.youtube.com/watch?v=#{youtube_id(params[:videos][0])}" # good -> array of ids
     }}
   end
 
@@ -45,13 +45,18 @@ class GameResults
   end
 
   def keyid(id)
-    service.get_keyword(id)
+    {data: service.get_keyword(id)[0]}
   end
 
   def generate_ids(words)
     ids = words.map do |word|
       service.get_keyword(word)[0][:id]
     end
+  end
+
+  def format_screenshots(params)
+    screenshots = run_array(:get_screenshots, :url, params[:screenshots])
+    screenshots.map {|screenshot| "https:" + screenshot}
   end
 
   def find_games_with_keywords(words)

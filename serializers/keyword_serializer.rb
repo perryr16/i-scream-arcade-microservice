@@ -1,3 +1,0 @@
-class KeywordSerializer 
-
-end

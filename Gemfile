@@ -8,6 +8,7 @@ gem 'faraday'
 gem 'pry'
 gem 'json'
 gem 'fast_jsonapi'
+gem 'shotgun'
 
 
 

@@ -41,7 +41,7 @@ RSpec.describe IScreamMicroservice do
 
     exp_age_rating = "\"age_ratings\":[8]"
     exp_release_date = "\"release_date\":1996"
-    exp_cover = "\"cover\":\"//images.igdb.com/igdb/image/upload/t_thumb/co1te8.jpg\""
+    exp_cover = "\"cover\":\"https://images.igdb.com/igdb/image/upload/t_thumb/co1te8.jpg\""
     exp_popularity = "\"popularity\":5.457862054247628"
     exp_summary = "\"summary\":\"Mario Kart 64 is the second main installment of the Mario Kart series. It"
     exp_name = "\"name\":\"Mario Kart 64\""
@@ -51,9 +51,9 @@ RSpec.describe IScreamMicroservice do
     exp_keywords = "\"keywords\":[25,280,281"
     exp_platforms = "\"platforms\":[\"Nintendo 64\",\"Wii\",\"Wii U\"]"
     exp_similars = "\"similars\":[\"Super Mario Bros.\",\"Crash Team Racing\",\"Crash Nitro Kart\",\"Super Mario Kart\",\"Mario Kart: Super Circuit\",\"Mario Kart DS\",\"Mario Kart 7\",\"Mario Kart 8\",\"Paper Mario: The Thousand-Year Door\"]"
-    exp_screenshots = "\"screenshots\":[\"//images.igdb.com/igdb/image/upload/t_thumb/sc87rl.jpg\",\"//images.igdb.com/igdb/image/upload/t_thumb/sc87rm.jpg\",\"//images.igdb.com/igdb/image/upload/t_thumb/sc87rn.jpg\""
+    exp_screenshots = "\"screenshots\":[\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rl.jpg\",\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rm.jpg\",\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rn.jpg\""
     exp_themes = "\"themes\":[\"Action\",\"Kids\"]"
-    exp_videos = "\"videos\":\"ASWgJvuQhTA\""
+    exp_videos = "\"videos\":\"https://www.youtube.com/watch?v=ASWgJvuQhTA\""
 
     expect(last_response.body).to include(exp_age_rating)
     expect(last_response.body).to include(exp_release_date)

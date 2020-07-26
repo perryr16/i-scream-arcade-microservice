@@ -34,6 +34,11 @@ class IScreamMicroservice < Sinatra::Base
   get '/dog' do 
     body 'what up dog'
   end
+
+  get '/' do 
+    "hit the following routes '/game/:game_title', '/keyword/:keyword', '/keyid/:keyid'"
+  end
+
   
   # get '/foo' do
   #   body "bar"
