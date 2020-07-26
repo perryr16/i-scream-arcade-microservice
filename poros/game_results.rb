@@ -9,7 +9,7 @@ class GameResults
     params = service.get_games_by_name(game_name)[0]
     result = {data: {
       age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), # array of ids
-      release_date: service.get_release_date(params[:first_release_date]), # id
+      release_date: Time.at(params[:first_release_date]).year, # id
       cover:        cover_url(params[:cover]),
       popularity:   params[:popularity], # good
       summary:      params[:summary], # good
@@ -42,6 +42,10 @@ class GameResults
 
   def keyword_id(word)
     {data: service.get_keyid(word)[0]}
+  end
+
+  def keyid(id)
+    service.get_keyword(id)
   end
 
   def generate_ids(words)

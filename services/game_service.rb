@@ -37,6 +37,13 @@ GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def get_keyword(key_id)
+    response = conn.get("/keywords") do |res|
+      res.body = "fields id, name; where id = #{key_id};" 
+    end
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def get_game_videos(video_id)
     response = conn.get("/game_videos") do |res|
       res.body = "fields *; where id = #{video_id};"
