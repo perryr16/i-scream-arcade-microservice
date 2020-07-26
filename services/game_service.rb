@@ -1,8 +1,9 @@
 require 'faraday'
+require './api_keys'
 
 class GameService
 
-GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
+
 
   def get_games_by_name(game)
     response = conn.get('/games') do |res|
@@ -79,13 +80,6 @@ GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def get_release_date(date_id)
-    response = conn.get("/release_dates") do |res|
-      res.body = "fields *; where id = #{date_id};"
-    end
-    body = JSON.parse(response.body, symbolize_names: true)
-  end
-
   def get_cover(cover_id)
     response = conn.get("/covers") do |res|
       res.body = "fields *; where id = #{cover_id};"
@@ -100,7 +94,6 @@ GAME_API = '177f68493b7f48e7c3deaf6d5a815ff0'
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
-  
 
   private
 
