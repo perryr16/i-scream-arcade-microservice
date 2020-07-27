@@ -1,2 +1,3 @@
-require './i-scream-arcade-microservice-app'
+require './i-scream-arcade-microservice-app.rb'
 run IScreamMicroservice
+  
