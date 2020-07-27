@@ -1,5 +1,6 @@
 require 'faraday'
-require './api_keys'
+require 'dotenv'
+Dotenv.load
 
 class GameService
 
@@ -99,8 +100,8 @@ class GameService
 
   def conn 
     Faraday.new('https://api-v3.igdb.com') do |res|
-      res.headers["user-key"] = GAME_API
-      # res.headers["user-key"] = ENV['GAME_API']
+      # res.headers["user-key"] = GAME_API
+      res.headers["user-key"] = ENV['GAME_API']
     end
   end
   

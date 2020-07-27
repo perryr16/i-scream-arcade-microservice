@@ -9,6 +9,7 @@ gem 'pry'
 gem 'json'
 gem 'fast_jsonapi'
 gem 'shotgun'
+gem 'dotenv'
 
 
 
