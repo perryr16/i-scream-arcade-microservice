@@ -6,6 +6,7 @@ class GameResults
   end
 
   def game_params_by_name(game_name)
+    return "Invalid Game Name" if service.get_games_by_name(game_name).empty?
     params = service.get_games_by_name(game_name)[0]
     result = {data: {
       age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), # array of ids
@@ -22,7 +23,8 @@ class GameResults
       similars:     run_array(:get_games_by_id, :name, params[:similar_games]), # array of ids
       screenshots:  format_screenshots(params), # array of ids
       themes:       run_array(:get_game_themes, :name, params[:themes]), # array of ids
-      videos:       "https://www.youtube.com/watch?v=#{youtube_id(params[:videos][0])}" # good -> array of ids
+      # video:       "https://www.youtube.com/watch?v=#{youtube_id(params[:videos][0])}" # good -> array of ids
+      video:        "#{youtube_id(params[:videos][0])}" # good -> array of ids
     }}
   end
 
