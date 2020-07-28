@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rack'
+gem 'rack' 
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-contrib'
 gem 'figaro'
