@@ -27,6 +27,7 @@ class GameResults
   end
 
   def run_array(method, key, array)
+    return nil if !array.is_a?(Array)
     array.map do |element|
       service.send(method,element)[0][key]
     end
