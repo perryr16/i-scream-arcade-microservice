@@ -39,6 +39,11 @@ class IScreamMicroservice < Sinatra::Base
     "hit the following routes '/game/:game_title', '/keyword/:keyword', '/keyid/:keyid'"
   end
 
+  get '/games_by_keyids/:key_id' do
+    # binding.pry
+    json results.games_by_keyids(params[:key_id])
+  end
+
   
   # get '/foo' do
   #   body "bar"
