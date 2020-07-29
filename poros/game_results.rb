@@ -80,7 +80,7 @@ class GameResults
     game_arrays = service.get_games_by_keyids(ids)
     game_arrays.map do |game| 
       # binding.pry
-    result = {
+    result = { data: {
       age_ratings:  run_array(:get_age_ratings, :rating, game[:age_ratings]), # array of ids
       release_date: Time.at(game[:first_release_date]).year, # Unix Time
       cover:        "https:#{cover_url(game[:cover])}",
@@ -96,7 +96,7 @@ class GameResults
       screenshots:  format_screenshots(game), # array of ids
       themes:       run_array(:get_game_themes, :name, game[:themes]), # array of ids
       videos:       "https://www.youtube.com/watch?v=#{youtube_id(game[:videos])}" # good -> array of ids
-      }
+      }}
     end
   end
 
