@@ -24,7 +24,7 @@ class GameResults
       screenshots:  format_screenshots(params), # array of ids
       themes:       run_array(:get_game_themes, :name, params[:themes]), # array of ids
       # video:       "https://www.youtube.com/watch?v=#{youtube_id(params[:videos][0])}" # good -> array of ids
-      video:        "#{youtube_id(params[:videos][0])}" # good -> array of ids
+      video:        "#{youtube_id(params[:videos])}" # good -> array of ids
     }}
   end
 
@@ -110,6 +110,8 @@ class GameResults
         key_id[0][:id]
       end
     end.compact.join(',')
+    return 'Invalid Keyword' if results.empty?
+    # binding.pry
     {data: games_by_keyids(results)}
   end
 end
