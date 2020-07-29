@@ -44,6 +44,10 @@ class IScreamMicroservice < Sinatra::Base
     json results.games_by_keyids(params[:key_id])
   end
 
+  get '/keywords_to_games/:keywords' do
+    json results.keywords_to_games(params[:keywords])
+  end
+
   
   # get '/foo' do
   #   body "bar"
