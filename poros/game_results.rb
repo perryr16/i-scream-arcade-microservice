@@ -36,7 +36,9 @@ class GameResults
   end
 
   def cover_url(cover_id)
-    service.get_cover(cover_id)[0][:url] # id
+    cover_data = service.get_cover(cover_id) # id
+    return nil if !cover_data.is_a?(Array)
+    cover_data[0][:url]
   end
   
   def youtube_id(video_id)
@@ -60,6 +62,7 @@ class GameResults
   end
 
   def format_screenshots(params)
+    return nil if !params[:screenshots].is_a?(Array)
     screenshots = run_array(:get_screenshots, :url, params[:screenshots])
     screenshots.map {|screenshot| "https:" + screenshot}
   end
@@ -77,7 +80,7 @@ class GameResults
     game_arrays = service.get_games_by_keyids(ids)
     game_arrays.map do |game| 
       # binding.pry
-    result = {data: {
+    result = {
       age_ratings:  run_array(:get_age_ratings, :rating, game[:age_ratings]), # array of ids
       release_date: Time.at(game[:first_release_date]).year, # Unix Time
       cover:        "https:#{cover_url(game[:cover])}",
@@ -93,9 +96,20 @@ class GameResults
       screenshots:  format_screenshots(game), # array of ids
       themes:       run_array(:get_game_themes, :name, game[:themes]), # array of ids
       videos:       "https://www.youtube.com/watch?v=#{youtube_id(game[:videos])}" # good -> array of ids
-      }}
+      }
     end
   end
-    
 
+  def keywords_to_games(keywords)
+    keyword_array = keywords.split(',')
+    results = keyword_array.map do |keyword| 
+      key_id = service.get_keyids_from_keywords(keyword)
+      if key_id == []
+        nil
+      else 
+        key_id[0][:id]
+      end
+    end.compact.join(',')
+    {data: games_by_keyids(results)}
+  end
 end
