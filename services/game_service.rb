@@ -103,6 +103,13 @@ class GameService
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def get_keyids_from_keywords(keyword)
+    response = conn.get("/keywords") do |res|
+      res.body = "fields id, name; where name = \"#{keyword}\";" 
+    end
+    # binding.pry
+    body = JSON.parse(response.body, symbolize_names: true)
+  end
 
   private
 
