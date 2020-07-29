@@ -98,9 +98,10 @@ class GameService
   def get_games_by_keyids(ids)
     response = conn.get("/games") do |res|
       res.body = "fields *; where keywords = (#{ids}) & total_rating > 0;
-                  sort total_rating asc;"
+                  sort total_rating desc;"
     end
     body = JSON.parse(response.body, symbolize_names: true)
+    # binding.pry
   end
 
   def get_keyids_from_keywords(keyword)
