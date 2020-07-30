@@ -92,6 +92,13 @@ RSpec.describe IScreamMicroservice do
 
     expect(last_response.body).to eq("\"Invalid Keyword\"")
    end
-  
+ 
+   
+   it "hits splash page" do
+     get '/'
+     
+     expect(last_response.body).to eq("hit the following routes '/game/:game_title', '/keyword/:keyword', '/keyid/:keyid', '/keywords_to_games/:keywords' ")
+   end
+   
 
 end
