@@ -18,4 +18,5 @@ group :test do
   gem 'rack-test'
   gem 'capybara'
   gem 'launchy'
+  gem 'simplecov'
 end

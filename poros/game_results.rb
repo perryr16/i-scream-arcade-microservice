@@ -55,6 +55,7 @@ class GameResults
     {data: service.get_keyword(id)[0]}
   end
 
+  # THIS METHOD IS PROBABLY NOT USED, also get_keyword spits out an id, so why would you feed it an id?
   def generate_ids(words)
     ids = words.map do |word|
       service.get_keyword(word)[0][:id]
@@ -67,14 +68,14 @@ class GameResults
     screenshots.map {|screenshot| "https:" + screenshot}
   end
 
-  def find_games_with_keywords(words)
-    ids = generate_ids(words)
-    games = service.get_games_by_keywords(ids)
-  end
+  # def find_games_with_keywords(words)
+  #   ids = generate_ids(words)
+  #   games = service.get_games_by_keywords(ids)
+  # end
     
-  def find_games_with_keyids(ids)
-    games = service.get_games_by_keywords(ids)
-  end
+  # def find_games_with_keyids(ids)
+  #   games = service.get_games_by_keywords(ids)
+  # end
 
   def games_by_keyids(ids)
     game_arrays = service.get_games_by_keyids(ids)
