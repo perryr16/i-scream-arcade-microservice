@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/keywords
+    body:
+      encoding: UTF-8
+      string: fields id, name; where name = "not_a_keyword_2f2asdf4";
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:50:57 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d72a42d5fb631aeecfa9f3b9ae7bce1591596145856; expires=Sat, 29-Aug-20
+        21:50:56 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '0'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 04434e09dc0000ecd744147200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb24c562ed8ecd7-DFW
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Thu, 30 Jul 2020 21:50:57 GMT
+recorded_with: VCR 6.0.0

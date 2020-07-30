@@ -4,8 +4,6 @@ Dotenv.load
 
 class GameService
 
-
-
   def get_games_by_name(game)
     response = conn.get('/games') do |res|
       res.body = "fields *; where name = \"#{game}\";"
@@ -19,18 +17,6 @@ class GameService
     end
     body = JSON.parse(response.body, symbolize_names: true)
   end
-
-  # def get_games_by_keywords(ids)
-  #   id_list =  ids.join(",")
-  #   response = conn.get('/games') do |res|
-  #     res.body = "fields name, summary, rating, keywords; 
-  #                 where keywords = [#{id_list}]
-  #                 & rating > 1; 
-  #                 sort rating desc;"
-  #     # NOTE: [] is AND, () is OR
-  #   end
-  #   body = JSON.parse(response.body, symbolize_names: true)
-  # end
 
   def get_keyid(word)
     response = conn.get("/keywords") do |res|
@@ -101,14 +87,12 @@ class GameService
                   sort total_rating desc;"
     end
     body = JSON.parse(response.body, symbolize_names: true)
-    # binding.pry
   end
 
   def get_keyids_from_keywords(keyword)
     response = conn.get("/keywords") do |res|
       res.body = "fields id, name; where name = \"#{keyword}\";" 
     end
-    # binding.pry
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
@@ -116,7 +100,6 @@ class GameService
 
   def conn 
     Faraday.new('https://api-v3.igdb.com') do |res|
-      # res.headers["user-key"] = GAME_API
       res.headers["user-key"] = ENV['GAME_API']
     end
   end

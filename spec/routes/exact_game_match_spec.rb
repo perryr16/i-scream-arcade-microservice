@@ -8,13 +8,7 @@ RSpec.describe IScreamMicroservice do
     IScreamMicroservice.new # this defines the active application for this test
   end
 
-  it "test" do
-    get '/dog'
-
-    expect(last_response.body).to include("what up dog")
-  end
-
-  it "returns the key id of key words" do
+  it "returns the key id of key words" , :vcr do
     get '/keyword/spider'
 
     expected = "{\"data\":{\"id\":4235,\"name\":\"spider\"}}"
@@ -26,7 +20,7 @@ RSpec.describe IScreamMicroservice do
     expect(last_response.body).to include(exp_word)
   end
 
-  it "returns the keyword of key id" do
+  it "returns the keyword of key id", :vcr do
     get '/keyid/16'
 
     exp_id  = "\"id\":16"
@@ -36,7 +30,7 @@ RSpec.describe IScreamMicroservice do
     expect(last_response.body).to include(exp_word)
   end
 
-  it "returns game information from exact match" do
+  it "returns game information from exact match", :vcr do
     get "/game/Mario%20Kart%2064"
 
     exp_age_rating = "\"age_ratings\":[8]"
@@ -74,7 +68,7 @@ RSpec.describe IScreamMicroservice do
   end
 
 
-   it "returns games by 2 keyword" do
+   it "returns games by 2 keyword", :vcr do
     get '/keywords_to_games/spider,ghost'
 
     body = JSON.parse(last_response.body, symbolize_names: true)
@@ -93,11 +87,18 @@ RSpec.describe IScreamMicroservice do
     expect((game10_keywords & exp_keyids).present?).to eq(true)
    end
 
-   it "returns nil by if bad keyword" do
+   it "returns nil by if bad keyword", :vcr do
     get '/keywords_to_games/not_a_keyword_2f2asdf4'
 
     expect(last_response.body).to eq("\"Invalid Keyword\"")
    end
-  
+ 
+   
+   it "hits splash page" do
+     get '/'
+     
+     expect(last_response.body).to eq("hit the following routes '/game/:game_title', '/keyword/:keyword', '/keyid/:keyid', '/keywords_to_games/:keywords' ")
+   end
+   
 
 end

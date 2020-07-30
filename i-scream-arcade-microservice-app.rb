@@ -24,29 +24,12 @@ class IScreamMicroservice < Sinatra::Base
     json results.keyid(params[:keyid])
   end
 
-  get '/dog' do 
-    body 'what up dog'
-  end
-
   get '/' do 
-    "hit the following routes '/game/:game_title', '/keyword/:keyword', '/keyid/:keyid'"
-  end
-  # NOT USED
-  get '/games_by_keyids/:key_id' do
-    json results.games_by_keyids(params[:key_id])
+    "hit the following routes '/game/:game_title', '/keyword/:keyword', '/keyid/:keyid', '/keywords_to_games/:keywords' "
   end
 
   get '/keywords_to_games/:keywords' do
     json results.keywords_to_games(params[:keywords])
   end
 
-  
-  # get '/foo' do
-  #   body "bar"
-  # end
-  
-  # after do
-  #   puts body
-  # end
-  
 end
