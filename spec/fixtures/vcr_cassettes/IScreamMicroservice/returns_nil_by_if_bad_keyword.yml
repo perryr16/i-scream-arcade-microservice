@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Jul 2020 21:27:09 GMT
+      - Thu, 30 Jul 2020 21:33:23 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
@@ -29,14 +29,14 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d42e4eeeaabd81883820a54f7091478d31596144428; expires=Sat, 29-Aug-20
-        21:27:08 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=dccce3453215d6e6da787a88230b238b81596144803; expires=Sat, 29-Aug-20
+        21:33:23 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
       X-Count:
       - '0'
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - '0443383f6500000eeed62d8200000001'
+      - 04433df72c00009b9759154200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Strict-Transport-Security:
@@ -46,9 +46,9 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5bb22978a9350eee-DFW
+      - 5bb2329ea8dc9b97-DFW
     body:
       encoding: UTF-8
       string: "[]"
-  recorded_at: Thu, 30 Jul 2020 21:27:09 GMT
+  recorded_at: Thu, 30 Jul 2020 21:33:23 GMT
 recorded_with: VCR 6.0.0

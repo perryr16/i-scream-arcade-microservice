@@ -8,12 +8,6 @@ RSpec.describe IScreamMicroservice do
     IScreamMicroservice.new # this defines the active application for this test
   end
 
-  it "test" do
-    get '/dog'
-
-    expect(last_response.body).to include("what up dog")
-  end
-
   it "returns the key id of key words" , :vcr do
     get '/keyword/spider'
 

@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 30 Jul 2020 21:27:16 GMT
+      - Thu, 30 Jul 2020 21:34:50 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
@@ -29,14 +29,14 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=de256f01a6b4619d68ff4908252dde5d31596144436; expires=Sat, 29-Aug-20
-        21:27:16 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=da5345a062ad76f448a83e4e56cf0823a1596144889; expires=Sat, 29-Aug-20
+        21:34:49 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
       X-Count:
       - '1'
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - '0443385ced00000f262b935200000001'
+      - 04433f482e0000d25e7aaf7200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Strict-Transport-Security:
@@ -46,7 +46,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5bb229a7eca80f26-DFW
+      - 5bb234b9e9ecd25e-DFW
     body:
       encoding: ASCII-8BIT
       string: |-
@@ -56,5 +56,5 @@ http_interactions:
             "name": "spider"
           }
         ]
-  recorded_at: Thu, 30 Jul 2020 21:27:16 GMT
+  recorded_at: Thu, 30 Jul 2020 21:34:50 GMT
 recorded_with: VCR 6.0.0
