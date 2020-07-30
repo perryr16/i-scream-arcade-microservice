@@ -7,22 +7,21 @@ class GameResults
 
   def game_result(params)
     result = {data: {
-      age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), # array of ids
-      release_date: Time.at(params[:first_release_date]).year, # Unix Time
+      age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), 
+      release_date: Time.at(params[:first_release_date]).year, 
       cover:        "https:#{cover_url(params[:cover])}",
-      popularity:   params[:popularity], # good
-      summary:      params[:summary], # good
-      name:         params[:name], # good
-      total_rating: params[:total_rating], # good
-      categories:   params[:category], # got 0
-      genres:       run_array(:get_game_genres, :name, params[:genres]), # array of ids
-      keywords:     params[:keywords], # array of ids -- several hundred :(
-      platforms:    run_array(:get_platforms, :name, params[:platforms]), # array of ids
-      similars:     run_array(:get_games_by_id, :name, params[:similar_games]), # array of ids
-      screenshots:  format_screenshots(params), # array of ids
-      themes:       run_array(:get_game_themes, :name, params[:themes]), # array of ids
-      # video:       "https://www.youtube.com/watch?v=#{youtube_id(params[:videos][0])}" # good -> array of ids
-      video:        "#{youtube_id(params[:videos])}" # good -> array of ids
+      popularity:   params[:popularity],
+      summary:      params[:summary],
+      name:         params[:name],
+      total_rating: params[:total_rating],
+      categories:   params[:category],
+      genres:       run_array(:get_game_genres, :name, params[:genres]), 
+      keywords:     params[:keywords],
+      platforms:    run_array(:get_platforms, :name, params[:platforms]), 
+      similars:     run_array(:get_games_by_id, :name, params[:similar_games]), 
+      screenshots:  format_screenshots(params), 
+      themes:       run_array(:get_game_themes, :name, params[:themes]), 
+      video:        "#{youtube_id(params[:videos])}"
     }}
   end
 
@@ -40,13 +39,12 @@ class GameResults
   end
 
   def cover_url(cover_id)
-    cover_data = service.get_cover(cover_id) # id
+    cover_data = service.get_cover(cover_id) 
     return nil if !cover_data.is_a?(Array)
     cover_data[0][:url]
   end
   
   def youtube_id(video_id)
-    # binding.pry
     return nil if !video_id.is_a?(Array)
     service.get_game_videos(video_id[0])[0][:video_id]
   end
@@ -59,7 +57,6 @@ class GameResults
     {data: service.get_keyword(id)[0]}
   end
 
-  # THIS METHOD IS PROBABLY NOT USED, also get_keyword spits out an id, so why would you feed it an id?
   def generate_ids(words)
     ids = words.map do |word|
       service.get_keyword(word)[0][:id]
@@ -72,19 +69,10 @@ class GameResults
     screenshots.map {|screenshot| "https:" + screenshot}
   end
 
-  # def find_games_with_keywords(words)
-  #   ids = generate_ids(words)
-  #   games = service.get_games_by_keywords(ids)
-  # end
-    
-  # def find_games_with_keyids(ids)
-  #   games = service.get_games_by_keywords(ids)
-  # end
 
   def games_by_keyids(ids)
     game_arrays = service.get_games_by_keyids(ids)
     game_arrays.map do |game| 
-      # binding.pry
       game_result(game)
     end
   end
@@ -100,7 +88,6 @@ class GameResults
       end
     end.compact.join(',')
     return 'Invalid Keyword' if results.empty?
-    # binding.pry
     {data: games_by_keyids(results)}
   end
 end

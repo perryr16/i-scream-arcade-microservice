@@ -4,6 +4,7 @@ require "./config/environment"
 SimpleCov.start
 
 RSpec.configure do |config|
+  require 'webmock/rspec'
   config.include Rack::Test::Methods
   config.before(:each) do
     $db = []
@@ -24,4 +25,11 @@ RSpec.configure do |config|
   config.profile_examples = 10
   config.order = :random
   Kernel.srand config.seed
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.filter_sensitive_data('GAME_API') { ENV['GAME_API'] }
+  config.configure_rspec_metadata!
 end

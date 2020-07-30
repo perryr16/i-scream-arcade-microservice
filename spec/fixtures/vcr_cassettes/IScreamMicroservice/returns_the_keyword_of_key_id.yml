@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/keywords
+    body:
+      encoding: UTF-8
+      string: fields id, name; where id = 16;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:25:43 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '46'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ded963b36cf45f77ee6df100e732f520e1596144343; expires=Sat, 29-Aug-20
+        21:25:43 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 044336f1190000e03b31b91200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb22761c8f4e03b-DFW
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "id": 16,
+            "name": "ghosts"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:25:43 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,4717 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where name = "Mario Kart 64";
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:09 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da3d73b31f0c6e62aab4cd8a3e8dd4fb31596144429; expires=Sat, 29-Aug-20
+        21:27:09 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '044338408a0000c7e29493d200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2297a78f7c7e2-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 2342,
+            "age_ratings": [
+              339
+            ],
+            "aggregated_rating": 81.0,
+            "aggregated_rating_count": 1,
+            "alternative_names": [
+              23329,
+              32156,
+              32157,
+              32158,
+              32159
+            ],
+            "category": 0,
+            "collection": 449,
+            "cover": 84752,
+            "created_at": 1372636800,
+            "external_games": [
+              147832,
+              246522
+            ],
+            "first_release_date": 850521600,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2,
+              4
+            ],
+            "genres": [
+              10,
+              14
+            ],
+            "involved_companies": [
+              98361,
+              98362
+            ],
+            "keywords": [
+              25,
+              280,
+              281,
+              296,
+              1019,
+              1046,
+              1057,
+              1075,
+              1381,
+              1440,
+              1678,
+              1682,
+              1710,
+              1744,
+              1783,
+              2071,
+              2112,
+              2152,
+              2274,
+              2415,
+              2759,
+              3627,
+              3831,
+              3912,
+              3988,
+              4144,
+              4146,
+              4147,
+              4157,
+              4161,
+              4162,
+              4170,
+              4179,
+              4186,
+              4210,
+              4211,
+              4216,
+              4243,
+              4274,
+              4286,
+              4294,
+              4303,
+              4321,
+              4324,
+              4333,
+              4350,
+              4359,
+              4391,
+              4480,
+              4509,
+              4522,
+              4569,
+              4657,
+              4678,
+              4694,
+              4747,
+              4758,
+              4760,
+              4803,
+              4907,
+              4910,
+              4994,
+              5029,
+              5043,
+              5171,
+              5196,
+              5302,
+              5354,
+              5362,
+              5406,
+              5507,
+              5553,
+              5558,
+              5602,
+              5612,
+              5639,
+              5704,
+              5759,
+              5786,
+              5801,
+              5876,
+              5878,
+              5943,
+              5987,
+              6015,
+              6138,
+              6139,
+              6140,
+              6154,
+              6174,
+              6176,
+              6178,
+              6185,
+              6191,
+              6192,
+              6194,
+              6204,
+              6206,
+              6207,
+              6208,
+              6209,
+              6368,
+              6715,
+              6765,
+              6798,
+              6824,
+              6832,
+              7026,
+              7070,
+              7107,
+              7220,
+              7305,
+              7522,
+              7552,
+              7633,
+              8132,
+              8187,
+              8879,
+              9075,
+              9275,
+              9529,
+              10436,
+              10749,
+              11109,
+              11187,
+              11378,
+              11435,
+              11917,
+              12170,
+              13121,
+              13491,
+              16053
+            ],
+            "name": "Mario Kart 64",
+            "platforms": [
+              4,
+              5,
+              41
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 5.457862054247628,
+            "pulse_count": 12,
+            "rating": 82.5840905561921,
+            "rating_count": 323,
+            "release_dates": [
+              141004,
+              141005,
+              141006,
+              141007,
+              141008,
+              194993,
+              194994,
+              194995,
+              194996,
+              194997,
+              194998,
+              194999
+            ],
+            "screenshots": [
+              383313,
+              383314,
+              383315,
+              383316,
+              383317,
+              383318,
+              383319
+            ],
+            "similar_games": [
+              358,
+              1192,
+              1193,
+              2332,
+              2343,
+              2345,
+              2349,
+              2350,
+              3349
+            ],
+            "slug": "mario-kart-64",
+            "summary": "Mario Kart 64 is the second main installment of the Mario Kart series. It is the first game in the series to use three-dimensional graphics, however, the characters and items in this game are still two-dimensional, pre-rendered sprites. The game offers two camera angles and three engine sizes: 50cc, 100cc and 150cc. Each kart has distinctive handling, acceleration and top speed capabilities. Shells that you fire at rival racers, Bananas that make them skid out and Lightning Bolts that make them small and very slow are just a few of the game\u0027s unique power-ups.",
+            "tags": [
+              1,
+              35,
+              268435466,
+              268435470,
+              536870937,
+              536871192,
+              536871193,
+              536871208,
+              536871931,
+              536871958,
+              536871969,
+              536871987,
+              536872293,
+              536872352,
+              536872590,
+              536872594,
+              536872622,
+              536872656,
+              536872695,
+              536872983,
+              536873024,
+              536873064,
+              536873186,
+              536873327,
+              536873671,
+              536874539,
+              536874743,
+              536874824,
+              536874900,
+              536875056,
+              536875058,
+              536875059,
+              536875069,
+              536875073,
+              536875074,
+              536875082,
+              536875091,
+              536875098,
+              536875122,
+              536875123,
+              536875128,
+              536875155,
+              536875186,
+              536875198,
+              536875206,
+              536875215,
+              536875233,
+              536875236,
+              536875245,
+              536875262,
+              536875271,
+              536875303,
+              536875392,
+              536875421,
+              536875434,
+              536875481,
+              536875569,
+              536875590,
+              536875606,
+              536875659,
+              536875670,
+              536875672,
+              536875715,
+              536875819,
+              536875822,
+              536875906,
+              536875941,
+              536875955,
+              536876083,
+              536876108,
+              536876214,
+              536876266,
+              536876274,
+              536876318,
+              536876419,
+              536876465,
+              536876470,
+              536876514,
+              536876524,
+              536876551,
+              536876616,
+              536876671,
+              536876698,
+              536876713,
+              536876788,
+              536876790,
+              536876855,
+              536876899,
+              536876927,
+              536877050,
+              536877051,
+              536877052,
+              536877066,
+              536877086,
+              536877088,
+              536877090,
+              536877097,
+              536877103,
+              536877104,
+              536877106,
+              536877116,
+              536877118,
+              536877119,
+              536877120,
+              536877121,
+              536877280,
+              536877627,
+              536877677,
+              536877710,
+              536877736,
+              536877744,
+              536877938,
+              536877982,
+              536878019,
+              536878132,
+              536878217,
+              536878434,
+              536878464,
+              536878545,
+              536879044,
+              536879099,
+              536879791,
+              536879987,
+              536880187,
+              536880441,
+              536881348,
+              536881661,
+              536882021,
+              536882099,
+              536882290,
+              536882347,
+              536882829,
+              536883082,
+              536884033,
+              536884403,
+              536886965
+            ],
+            "themes": [
+              1,
+              35
+            ],
+            "total_rating": 81.79204527809605,
+            "total_rating_count": 324,
+            "updated_at": 1595548800,
+            "url": "https://www.igdb.com/games/mario-kart-64",
+            "videos": [
+              35661
+            ],
+            "websites": [
+              7506,
+              112678
+            ],
+            "checksum": "711ec454-07ee-c2c2-1c4c-57d6a401497d"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:09 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where name = "Mario Kart 64";
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:09 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d20fe5776e7298ca7e0165cd38dc5e2e51596144429; expires=Sat, 29-Aug-20
+        21:27:09 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '044338418a0000e043db1a1200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2297c1a29e043-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 2342,
+            "age_ratings": [
+              339
+            ],
+            "aggregated_rating": 81.0,
+            "aggregated_rating_count": 1,
+            "alternative_names": [
+              23329,
+              32156,
+              32157,
+              32158,
+              32159
+            ],
+            "category": 0,
+            "collection": 449,
+            "cover": 84752,
+            "created_at": 1372636800,
+            "external_games": [
+              147832,
+              246522
+            ],
+            "first_release_date": 850521600,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2,
+              4
+            ],
+            "genres": [
+              10,
+              14
+            ],
+            "involved_companies": [
+              98361,
+              98362
+            ],
+            "keywords": [
+              25,
+              280,
+              281,
+              296,
+              1019,
+              1046,
+              1057,
+              1075,
+              1381,
+              1440,
+              1678,
+              1682,
+              1710,
+              1744,
+              1783,
+              2071,
+              2112,
+              2152,
+              2274,
+              2415,
+              2759,
+              3627,
+              3831,
+              3912,
+              3988,
+              4144,
+              4146,
+              4147,
+              4157,
+              4161,
+              4162,
+              4170,
+              4179,
+              4186,
+              4210,
+              4211,
+              4216,
+              4243,
+              4274,
+              4286,
+              4294,
+              4303,
+              4321,
+              4324,
+              4333,
+              4350,
+              4359,
+              4391,
+              4480,
+              4509,
+              4522,
+              4569,
+              4657,
+              4678,
+              4694,
+              4747,
+              4758,
+              4760,
+              4803,
+              4907,
+              4910,
+              4994,
+              5029,
+              5043,
+              5171,
+              5196,
+              5302,
+              5354,
+              5362,
+              5406,
+              5507,
+              5553,
+              5558,
+              5602,
+              5612,
+              5639,
+              5704,
+              5759,
+              5786,
+              5801,
+              5876,
+              5878,
+              5943,
+              5987,
+              6015,
+              6138,
+              6139,
+              6140,
+              6154,
+              6174,
+              6176,
+              6178,
+              6185,
+              6191,
+              6192,
+              6194,
+              6204,
+              6206,
+              6207,
+              6208,
+              6209,
+              6368,
+              6715,
+              6765,
+              6798,
+              6824,
+              6832,
+              7026,
+              7070,
+              7107,
+              7220,
+              7305,
+              7522,
+              7552,
+              7633,
+              8132,
+              8187,
+              8879,
+              9075,
+              9275,
+              9529,
+              10436,
+              10749,
+              11109,
+              11187,
+              11378,
+              11435,
+              11917,
+              12170,
+              13121,
+              13491,
+              16053
+            ],
+            "name": "Mario Kart 64",
+            "platforms": [
+              4,
+              5,
+              41
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 5.457862054247628,
+            "pulse_count": 12,
+            "rating": 82.5840905561921,
+            "rating_count": 323,
+            "release_dates": [
+              141004,
+              141005,
+              141006,
+              141007,
+              141008,
+              194993,
+              194994,
+              194995,
+              194996,
+              194997,
+              194998,
+              194999
+            ],
+            "screenshots": [
+              383313,
+              383314,
+              383315,
+              383316,
+              383317,
+              383318,
+              383319
+            ],
+            "similar_games": [
+              358,
+              1192,
+              1193,
+              2332,
+              2343,
+              2345,
+              2349,
+              2350,
+              3349
+            ],
+            "slug": "mario-kart-64",
+            "summary": "Mario Kart 64 is the second main installment of the Mario Kart series. It is the first game in the series to use three-dimensional graphics, however, the characters and items in this game are still two-dimensional, pre-rendered sprites. The game offers two camera angles and three engine sizes: 50cc, 100cc and 150cc. Each kart has distinctive handling, acceleration and top speed capabilities. Shells that you fire at rival racers, Bananas that make them skid out and Lightning Bolts that make them small and very slow are just a few of the game\u0027s unique power-ups.",
+            "tags": [
+              1,
+              35,
+              268435466,
+              268435470,
+              536870937,
+              536871192,
+              536871193,
+              536871208,
+              536871931,
+              536871958,
+              536871969,
+              536871987,
+              536872293,
+              536872352,
+              536872590,
+              536872594,
+              536872622,
+              536872656,
+              536872695,
+              536872983,
+              536873024,
+              536873064,
+              536873186,
+              536873327,
+              536873671,
+              536874539,
+              536874743,
+              536874824,
+              536874900,
+              536875056,
+              536875058,
+              536875059,
+              536875069,
+              536875073,
+              536875074,
+              536875082,
+              536875091,
+              536875098,
+              536875122,
+              536875123,
+              536875128,
+              536875155,
+              536875186,
+              536875198,
+              536875206,
+              536875215,
+              536875233,
+              536875236,
+              536875245,
+              536875262,
+              536875271,
+              536875303,
+              536875392,
+              536875421,
+              536875434,
+              536875481,
+              536875569,
+              536875590,
+              536875606,
+              536875659,
+              536875670,
+              536875672,
+              536875715,
+              536875819,
+              536875822,
+              536875906,
+              536875941,
+              536875955,
+              536876083,
+              536876108,
+              536876214,
+              536876266,
+              536876274,
+              536876318,
+              536876419,
+              536876465,
+              536876470,
+              536876514,
+              536876524,
+              536876551,
+              536876616,
+              536876671,
+              536876698,
+              536876713,
+              536876788,
+              536876790,
+              536876855,
+              536876899,
+              536876927,
+              536877050,
+              536877051,
+              536877052,
+              536877066,
+              536877086,
+              536877088,
+              536877090,
+              536877097,
+              536877103,
+              536877104,
+              536877106,
+              536877116,
+              536877118,
+              536877119,
+              536877120,
+              536877121,
+              536877280,
+              536877627,
+              536877677,
+              536877710,
+              536877736,
+              536877744,
+              536877938,
+              536877982,
+              536878019,
+              536878132,
+              536878217,
+              536878434,
+              536878464,
+              536878545,
+              536879044,
+              536879099,
+              536879791,
+              536879987,
+              536880187,
+              536880441,
+              536881348,
+              536881661,
+              536882021,
+              536882099,
+              536882290,
+              536882347,
+              536882829,
+              536883082,
+              536884033,
+              536884403,
+              536886965
+            ],
+            "themes": [
+              1,
+              35
+            ],
+            "total_rating": 81.79204527809605,
+            "total_rating_count": 324,
+            "updated_at": 1595548800,
+            "url": "https://www.igdb.com/games/mario-kart-64",
+            "videos": [
+              35661
+            ],
+            "websites": [
+              7506,
+              112678
+            ],
+            "checksum": "711ec454-07ee-c2c2-1c4c-57d6a401497d"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:09 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/age_ratings
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 339;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:09 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=def69e1597328975b62d052de36d672ae1596144429; expires=Sat, 29-Aug-20
+        21:27:09 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '044338428c0000d2763f163200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2297daaa3d276-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 339,
+            "category": 1,
+            "rating": 8,
+            "checksum": "0c69d549-9c4a-eef2-c3bb-3c40d671c102"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:09 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/covers
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 84752;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d19ea69ae16aa1522d05aefe8fb17c94d1596144429; expires=Sat, 29-Aug-20
+        21:27:09 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '044338438b00000e5289a61200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2297f4eb40e52-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 84752,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 800,
+            "image_id": "co1te8",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1te8.jpg",
+            "width": 600,
+            "checksum": "82da4907-fc06-d72a-639a-9bef3dcf078a"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:10 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/genres
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 10;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dafc9f68145ec7163cc7e0140da51cc4c1596144430; expires=Sat, 29-Aug-20
+        21:27:10 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433844a00000ecd7362f6200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229810957ecd7-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 10,
+            "created_at": 1297555200,
+            "name": "Racing",
+            "slug": "racing",
+            "updated_at": 1323216000,
+            "url": "https://www.igdb.com/genres/racing",
+            "checksum": "73c2653f-54d8-c1bd-d523-dd57fb753194"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:10 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/genres
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 14;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d24b83e8c04b1832a97afba9d53714b6d1596144430; expires=Sat, 29-Aug-20
+        21:27:10 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433845990000e01f4e8d1200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229828de9e01f-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 14,
+            "created_at": 1297555200,
+            "name": "Sport",
+            "slug": "sport",
+            "updated_at": 1323216000,
+            "url": "https://www.igdb.com/genres/sport",
+            "checksum": "e598c458-3e21-7a14-50a5-ea53733ab22f"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:10 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/platforms
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 4;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfafdb2a076de92b0bcb8f7b9d6426bdc1596144430; expires=Sat, 29-Aug-20
+        21:27:10 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433846ac0000c812233e4200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229844eb1c812-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 4,
+            "abbreviation": "N64",
+            "alternative_name": "N64",
+            "category": 1,
+            "created_at": 1297555200,
+            "generation": 5,
+            "name": "Nintendo 64",
+            "platform_logo": 260,
+            "product_family": 5,
+            "slug": "n64",
+            "updated_at": 1565136000,
+            "url": "https://www.igdb.com/platforms/n64",
+            "versions": [
+              51,
+              122
+            ],
+            "websites": [
+              35
+            ],
+            "checksum": "4b7137c3-d1e7-6b17-c349-24a74c02fd8a"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:10 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/platforms
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 5;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:11 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6d7307a9551582ce51c603b8b4900bba1596144431; expires=Sat, 29-Aug-20
+        21:27:11 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433847a30000ec62703ed200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb22985dc8bec62-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 5,
+            "abbreviation": "Wii",
+            "alternative_name": "Revolution",
+            "category": 1,
+            "created_at": 1297555200,
+            "generation": 7,
+            "name": "Wii",
+            "platform_logo": 326,
+            "product_family": 5,
+            "slug": "wii",
+            "updated_at": 1565136000,
+            "url": "https://www.igdb.com/platforms/wii",
+            "versions": [
+              72,
+              283
+            ],
+            "checksum": "065bc05e-5f2b-1ff5-a6cd-c006f36b2711"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:11 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/platforms
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 41;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:11 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dabdf31c524e7255aaa873009a591b51f1596144431; expires=Sat, 29-Aug-20
+        21:27:11 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '044338489400000f36c125e200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229875aef0f36-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 41,
+            "abbreviation": "WiiU",
+            "category": 1,
+            "created_at": 1317686400,
+            "generation": 8,
+            "name": "Wii U",
+            "platform_logo": 239,
+            "product_family": 5,
+            "slug": "wiiu",
+            "updated_at": 1489968000,
+            "url": "https://www.igdb.com/platforms/wiiu",
+            "versions": [
+              73
+            ],
+            "websites": [
+              10
+            ],
+            "checksum": "2889bb5a-f08b-c80a-2ea2-2556bc88d125"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:11 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 358;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:11 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4e2989a7cbd8018d7683a2f6f8a630d61596144431; expires=Sat, 29-Aug-20
+        21:27:11 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '044338498d0000ec7e35828200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb22988ef13ec7e-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 358,
+            "age_ratings": [
+              24,
+              24927
+            ],
+            "alternative_names": [
+              31808,
+              31809,
+              31810,
+              31811,
+              31812,
+              31813,
+              31814
+            ],
+            "bundles": [
+              5199,
+              9250,
+              69638,
+              77227,
+              77785
+            ],
+            "category": 0,
+            "collection": 6118,
+            "cover": 97418,
+            "created_at": 1300320000,
+            "external_games": [
+              142871,
+              190087,
+              245622,
+              1193416,
+              1611061
+            ],
+            "first_release_date": 495417600,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2
+            ],
+            "genres": [
+              8,
+              31
+            ],
+            "involved_companies": [
+              97362,
+              97363
+            ],
+            "keywords": [
+              16,
+              137,
+              226,
+              296,
+              394,
+              432,
+              558,
+              594,
+              846,
+              1027,
+              1059,
+              1098,
+              1186,
+              1299,
+              1381,
+              1682,
+              1705,
+              2045,
+              2049,
+              2071,
+              2112,
+              2113,
+              2114,
+              2152,
+              2199,
+              2274,
+              2324,
+              2450,
+              2528,
+              2759,
+              3079,
+              3486,
+              3831,
+              3833,
+              3901,
+              3910,
+              3922,
+              4134,
+              4144,
+              4160,
+              4161,
+              4162,
+              4163,
+              4167,
+              4169,
+              4171,
+              4189,
+              4213,
+              4218,
+              4219,
+              4263,
+              4285,
+              4288,
+              4289,
+              4297,
+              4301,
+              4302,
+              4350,
+              4353,
+              4374,
+              4396,
+              4450,
+              4479,
+              4480,
+              4484,
+              4522,
+              4523,
+              4525,
+              4541,
+              4579,
+              4587,
+              4613,
+              4694,
+              4711,
+              4756,
+              4758,
+              4779,
+              4790,
+              4801,
+              4828,
+              4880,
+              4891,
+              4918,
+              4925,
+              4940,
+              4958,
+              4960,
+              4990,
+              4991,
+              5022,
+              5101,
+              5171,
+              5208,
+              5210,
+              5300,
+              5358,
+              5385,
+              5436,
+              5439,
+              5441,
+              5536,
+              5567,
+              5587,
+              5602,
+              5628,
+              5672,
+              5703,
+              5801,
+              5963,
+              5966,
+              6040,
+              6041,
+              6136,
+              6137,
+              6138,
+              6139,
+              6143,
+              6144,
+              6149,
+              6150,
+              6151,
+              6153,
+              6154,
+              6159,
+              6161,
+              6163,
+              6172,
+              6174,
+              6176,
+              6179,
+              6181,
+              6189,
+              6204,
+              6325,
+              6368,
+              6522,
+              6539,
+              6648,
+              6653,
+              6673,
+              6798,
+              6799,
+              6824,
+              6827,
+              7028,
+              7200,
+              7235,
+              7241,
+              7242,
+              7245,
+              7305,
+              7387,
+              7593,
+              7694,
+              7696,
+              8100,
+              8236,
+              8239,
+              8879,
+              8894,
+              9189,
+              9209,
+              9246,
+              9275,
+              9408,
+              9448,
+              9504,
+              9898,
+              10147,
+              10211,
+              10442,
+              10579,
+              10933,
+              11035,
+              11080,
+              11378,
+              11566,
+              11763,
+              11789,
+              11848,
+              11853,
+              12053,
+              12210,
+              12216,
+              12655,
+              12748,
+              12763,
+              13106,
+              14195,
+              14362,
+              15079,
+              15081,
+              15193,
+              15407
+            ],
+            "name": "Super Mario Bros.",
+            "platforms": [
+              5,
+              18,
+              24,
+              37,
+              41,
+              51
+            ],
+            "player_perspectives": [
+              4
+            ],
+            "popularity": 10.80729651934478,
+            "pulse_count": 42,
+            "rating": 83.7780667481781,
+            "rating_count": 747,
+            "release_dates": [
+              143761,
+              143763,
+              143764,
+              143765,
+              143766,
+              143767,
+              143768,
+              143769,
+              143770,
+              143771,
+              143772,
+              193437,
+              193438,
+              193439,
+              193440,
+              193441,
+              193442,
+              193443,
+              193444,
+              193445
+            ],
+            "screenshots": [
+              379065,
+              379066,
+              379067,
+              379068,
+              379069
+            ],
+            "similar_games": [
+              1067,
+              1068,
+              1075,
+              1078,
+              1079,
+              2180,
+              3340,
+              3349,
+              22301
+            ],
+            "slug": "super-mario-bros",
+            "storyline": "One day, the Mushroom Kingdom was invaded by the Koopa, a tribe of turtles capable of using powerful dark magic. Their magic was used to transform all the Mushroom People into inanimate objects such as rocks, bricks, and even horsehair plants, thus spelling the kingdom\u0027s downfall. Only Princess Toadstool can undo the spell and restore her people back to life, but she is being held captive by King Koopa himself. Mario hears of the princess\u0027s plight, and sets out on a quest through 32 stages to topple the Turtle Tribe and save the once-peaceful kingdom.",
+            "summary": "Super Mario Bros. is the first ever platform adventure for the Mario Brothers. It shifted the gameplay away from its single-screen arcade predecessor, Mario Bros., and instead featured side-scrolling platformer levels. While not the first game of the Mario franchise, Super Mario Bros. is the most iconic, and introduced various series staples, from power-ups, to classic enemies like Little Goombas, to the basic premise of rescuing Princess Toadstool from King Koopa.",
+            "tags": [
+              1,
+              268435464,
+              268435487,
+              536870928,
+              536871049,
+              536871138,
+              536871208,
+              536871306,
+              536871344,
+              536871470,
+              536871506,
+              536871758,
+              536871939,
+              536871971,
+              536872010,
+              536872098,
+              536872211,
+              536872293,
+              536872594,
+              536872617,
+              536872957,
+              536872961,
+              536872983,
+              536873024,
+              536873025,
+              536873026,
+              536873064,
+              536873111,
+              536873186,
+              536873236,
+              536873362,
+              536873440,
+              536873671,
+              536873991,
+              536874398,
+              536874743,
+              536874745,
+              536874813,
+              536874822,
+              536874834,
+              536875046,
+              536875056,
+              536875072,
+              536875073,
+              536875074,
+              536875075,
+              536875079,
+              536875081,
+              536875083,
+              536875101,
+              536875125,
+              536875130,
+              536875131,
+              536875175,
+              536875197,
+              536875200,
+              536875201,
+              536875209,
+              536875213,
+              536875214,
+              536875262,
+              536875265,
+              536875286,
+              536875308,
+              536875362,
+              536875391,
+              536875392,
+              536875396,
+              536875434,
+              536875435,
+              536875437,
+              536875453,
+              536875491,
+              536875499,
+              536875525,
+              536875606,
+              536875623,
+              536875668,
+              536875670,
+              536875691,
+              536875702,
+              536875713,
+              536875740,
+              536875792,
+              536875803,
+              536875830,
+              536875837,
+              536875852,
+              536875870,
+              536875872,
+              536875902,
+              536875903,
+              536875934,
+              536876013,
+              536876083,
+              536876120,
+              536876122,
+              536876212,
+              536876270,
+              536876297,
+              536876348,
+              536876351,
+              536876353,
+              536876448,
+              536876479,
+              536876499,
+              536876514,
+              536876540,
+              536876584,
+              536876615,
+              536876713,
+              536876875,
+              536876878,
+              536876952,
+              536876953,
+              536877048,
+              536877049,
+              536877050,
+              536877051,
+              536877055,
+              536877056,
+              536877061,
+              536877062,
+              536877063,
+              536877065,
+              536877066,
+              536877071,
+              536877073,
+              536877075,
+              536877084,
+              536877086,
+              536877088,
+              536877091,
+              536877093,
+              536877101,
+              536877116,
+              536877237,
+              536877280,
+              536877434,
+              536877451,
+              536877560,
+              536877565,
+              536877585,
+              536877710,
+              536877711,
+              536877736,
+              536877739,
+              536877940,
+              536878112,
+              536878147,
+              536878153,
+              536878154,
+              536878157,
+              536878217,
+              536878299,
+              536878505,
+              536878606,
+              536878608,
+              536879012,
+              536879148,
+              536879151,
+              536879791,
+              536879806,
+              536880101,
+              536880121,
+              536880158,
+              536880187,
+              536880320,
+              536880360,
+              536880416,
+              536880810,
+              536881059,
+              536881123,
+              536881354,
+              536881491,
+              536881845,
+              536881947,
+              536881992,
+              536882290,
+              536882478,
+              536882675,
+              536882701,
+              536882760,
+              536882765,
+              536882965,
+              536883122,
+              536883128,
+              536883567,
+              536883660,
+              536883675,
+              536884018,
+              536885107,
+              536885274,
+              536885991,
+              536885993,
+              536886105,
+              536886319
+            ],
+            "themes": [
+              1
+            ],
+            "total_rating": 83.7780667481781,
+            "total_rating_count": 747,
+            "updated_at": 1595808000,
+            "url": "https://www.igdb.com/games/super-mario-bros",
+            "videos": [
+              35300,
+              35301
+            ],
+            "websites": [
+              4549,
+              4550
+            ],
+            "checksum": "89f9db64-372f-632b-e126-fa37fd5ea69c"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:11 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 1192;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:11 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d257f4f9051ced72623e0e53887ab44bb1596144431; expires=Sat, 29-Aug-20
+        21:27:11 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443384a8d0000c7f63d0c5200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2298a7f4dc7f6-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 1192,
+            "age_ratings": [
+              8711,
+              8712
+            ],
+            "alternative_names": [
+              17714
+            ],
+            "category": 0,
+            "collection": 6048,
+            "cover": 77134,
+            "created_at": 1341705600,
+            "external_games": [
+              151371,
+              189730,
+              245889
+            ],
+            "first_release_date": 938649600,
+            "franchises": [
+              1351
+            ],
+            "game_modes": [
+              1,
+              2,
+              4
+            ],
+            "genres": [
+              10
+            ],
+            "involved_companies": [
+              2820,
+              2821
+            ],
+            "keywords": [
+              3,
+              25,
+              280,
+              296,
+              350,
+              394,
+              695,
+              732,
+              789,
+              970,
+              1299,
+              1409,
+              1682,
+              2115,
+              2242,
+              3486,
+              3627,
+              3833,
+              3912,
+              4157,
+              4161,
+              4173,
+              4183,
+              4210,
+              4216,
+              4286,
+              4287,
+              4350,
+              4359,
+              4372,
+              4462,
+              4477,
+              4484,
+              4509,
+              4657,
+              4678,
+              4726,
+              4727,
+              4746,
+              4760,
+              4795,
+              4802,
+              4827,
+              4879,
+              4958,
+              5043,
+              5436,
+              5507,
+              5593,
+              5602,
+              5704,
+              5801,
+              5876,
+              6031,
+              6126,
+              6185,
+              6528,
+              6619,
+              6765,
+              7026,
+              7070,
+              7640,
+              8169,
+              9529,
+              11257,
+              11378,
+              12539,
+              12540,
+              12940,
+              13119,
+              13951,
+              15621
+            ],
+            "name": "Crash Team Racing",
+            "platforms": [
+              7,
+              45
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 6.795220670521917,
+            "pulse_count": 11,
+            "rating": 84.4687701812968,
+            "rating_count": 236,
+            "release_dates": [
+              3051,
+              3052
+            ],
+            "screenshots": [
+              6993,
+              24196,
+              24197,
+              24198,
+              24199
+            ],
+            "similar_games": [
+              843,
+              1185,
+              1186,
+              1187,
+              1193,
+              1195,
+              2332,
+              2342,
+              2343
+            ],
+            "slug": "crash-team-racing",
+            "summary": "The main antagonist of the story, Nitros Oxide, is the self-proclaimed fastest racer in the galaxy who threatens to turn Earth into a concrete parking lot. Preceding Oxide are four boss characters: Ripper Roo, a deranged straitjacket-wearing kangaroo; Papu Papu, the morbidly obese leader of the island\u0027s native tribe; Komodo Joe, a Komodo dragon with a speech sound disorder; and Pinstripe Potoroo, a greedy pinstripe-clad potoroo. The four boss characters, along with an imperfect and morally ambiguous clone of Crash Bandicoot named Fake Crash, become accessible as playable characters if the Adventure Mode is fully completed.",
+            "tags": [
+              1,
+              18,
+              27,
+              268435466,
+              536870915,
+              536870937,
+              536871192,
+              536871208,
+              536871262,
+              536871306,
+              536871607,
+              536871644,
+              536871701,
+              536871882,
+              536872211,
+              536872321,
+              536872594,
+              536873027,
+              536873154,
+              536874398,
+              536874539,
+              536874745,
+              536874824,
+              536875069,
+              536875073,
+              536875085,
+              536875095,
+              536875122,
+              536875128,
+              536875198,
+              536875199,
+              536875262,
+              536875271,
+              536875284,
+              536875374,
+              536875389,
+              536875396,
+              536875421,
+              536875569,
+              536875590,
+              536875638,
+              536875639,
+              536875658,
+              536875672,
+              536875707,
+              536875714,
+              536875739,
+              536875791,
+              536875870,
+              536875955,
+              536876348,
+              536876419,
+              536876505,
+              536876514,
+              536876616,
+              536876713,
+              536876788,
+              536876943,
+              536877038,
+              536877097,
+              536877440,
+              536877531,
+              536877677,
+              536877938,
+              536877982,
+              536878552,
+              536879081,
+              536880441,
+              536882169,
+              536882290,
+              536883451,
+              536883452,
+              536883852,
+              536884031,
+              536884863,
+              536886533
+            ],
+            "themes": [
+              1,
+              18,
+              27
+            ],
+            "total_rating": 84.4687701812968,
+            "total_rating_count": 236,
+            "updated_at": 1595635200,
+            "url": "https://www.igdb.com/games/crash-team-racing",
+            "videos": [
+              865
+            ],
+            "websites": [
+              7502
+            ],
+            "checksum": "ce8729f5-4bf6-f5dc-9461-e32457f718cb"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:11 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 1193;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:12 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5b0456a12b869ae41a5bc70be2ce58d11596144432; expires=Sat, 29-Aug-20
+        21:27:12 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443384b8700000f3e12816200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2298c08b30f3e-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 1193,
+            "age_ratings": [
+              19639,
+              19640
+            ],
+            "aggregated_rating": 77.0,
+            "aggregated_rating_count": 2,
+            "alternative_names": [
+              18422
+            ],
+            "category": 0,
+            "collection": 6049,
+            "cover": 77624,
+            "created_at": 1341705600,
+            "external_games": [
+              154939,
+              189260,
+              249163
+            ],
+            "first_release_date": 1068508800,
+            "franchises": [
+              1351
+            ],
+            "game_modes": [
+              1,
+              2
+            ],
+            "genres": [
+              10
+            ],
+            "involved_companies": [
+              2822,
+              2823,
+              2824
+            ],
+            "keywords": [
+              25,
+              280,
+              296,
+              394,
+              970,
+              1682,
+              1744,
+              2115,
+              3486,
+              3627,
+              4157,
+              4210,
+              4216,
+              4286,
+              4287,
+              4462,
+              4484,
+              4760,
+              4795,
+              4802,
+              4803,
+              4958,
+              5043,
+              5196,
+              5507,
+              5558,
+              5786,
+              5876,
+              6185,
+              6363,
+              7026,
+              7595,
+              9529,
+              13110,
+              13115,
+              13295
+            ],
+            "name": "Crash Nitro Kart",
+            "platforms": [
+              8,
+              11,
+              21,
+              24,
+              42
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 5.012075848822866,
+            "rating": 71.000427178445,
+            "rating_count": 43,
+            "release_dates": [
+              3053,
+              3054,
+              3055,
+              3056,
+              3057,
+              138502,
+              138503,
+              138504
+            ],
+            "screenshots": [
+              155500,
+              155501,
+              155502,
+              155503,
+              155504,
+              155505,
+              155506,
+              155507,
+              155508,
+              155509,
+              155510,
+              155511
+            ],
+            "similar_games": [
+              1192,
+              1195,
+              2332,
+              2342,
+              2343,
+              3772,
+              11198,
+              55038,
+              120268
+            ],
+            "slug": "crash-nitro-kart",
+            "summary": "Crash Bandicoot returns to the karting scene with a host of other characters from the adventure series, and this time they have both Neo Cortex and Emperor Velo to worry about. Velo has taken the crew to a remote planet, forced to race for their lives against Neo Cortex and his many evil doers. \n \nChoose from various game modes, from the straight into the action Arcade mode to Adventure mode, following Crash and the gang in the story to save Earth. Race against four friends in multiplayer battle modes, plus connect to the Gamecube for extra options and upload your high scores to the internet ranking system. \n[",
+            "tags": [
+              1,
+              18,
+              268435466,
+              536870937,
+              536871192,
+              536871208,
+              536871306,
+              536871882,
+              536872594,
+              536872656,
+              536873027,
+              536874398,
+              536874539,
+              536875069,
+              536875122,
+              536875128,
+              536875198,
+              536875199,
+              536875374,
+              536875396,
+              536875672,
+              536875707,
+              536875714,
+              536875715,
+              536875870,
+              536875955,
+              536876108,
+              536876419,
+              536876470,
+              536876698,
+              536876788,
+              536877097,
+              536877275,
+              536877938,
+              536878507,
+              536880441,
+              536884022,
+              536884027,
+              536884207
+            ],
+            "themes": [
+              1,
+              18
+            ],
+            "total_rating": 74.0002135892225,
+            "total_rating_count": 45,
+            "updated_at": 1595548800,
+            "url": "https://www.igdb.com/games/crash-nitro-kart",
+            "videos": [
+              866
+            ],
+            "websites": [
+              112679
+            ],
+            "checksum": "574caded-c0c0-86b2-6804-e70a0b0cc2cf"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:12 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 2332;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:12 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4f0a80b93a330fa361a962810cba803e1596144432; expires=Sat, 29-Aug-20
+        21:27:12 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443384c900000ec6630211200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2298dbf1bec66-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 2332,
+            "age_ratings": [
+              330,
+              27741
+            ],
+            "aggregated_rating": 90.0,
+            "aggregated_rating_count": 2,
+            "alternative_names": [
+              31983,
+              31984,
+              31985,
+              31986
+            ],
+            "category": 0,
+            "collection": 449,
+            "cover": 95768,
+            "created_at": 1372550400,
+            "external_games": [
+              139684,
+              247147
+            ],
+            "first_release_date": 714873600,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2,
+              4
+            ],
+            "genres": [
+              10,
+              33
+            ],
+            "involved_companies": [
+              97585,
+              97586
+            ],
+            "keywords": [
+              25,
+              280,
+              296,
+              484,
+              513,
+              695,
+              1024,
+              1046,
+              1057,
+              1075,
+              1381,
+              1440,
+              1487,
+              1552,
+              1678,
+              1682,
+              1710,
+              1741,
+              1744,
+              2112,
+              2152,
+              2235,
+              2759,
+              3627,
+              3912,
+              4144,
+              4157,
+              4161,
+              4162,
+              4170,
+              4179,
+              4210,
+              4211,
+              4216,
+              4218,
+              4263,
+              4274,
+              4286,
+              4302,
+              4303,
+              4321,
+              4324,
+              4444,
+              4479,
+              4480,
+              4509,
+              4522,
+              4657,
+              4678,
+              4694,
+              4753,
+              4756,
+              4803,
+              4907,
+              4911,
+              4958,
+              5029,
+              5043,
+              5171,
+              5208,
+              5302,
+              5553,
+              5558,
+              5704,
+              5786,
+              5801,
+              5876,
+              5943,
+              6015,
+              6138,
+              6139,
+              6140,
+              6154,
+              6174,
+              6176,
+              6185,
+              6189,
+              6194,
+              6204,
+              6207,
+              6208,
+              6715,
+              6765,
+              6798,
+              6824,
+              6832,
+              7026,
+              7070,
+              7522,
+              7633,
+              7694,
+              8132,
+              8187,
+              8879,
+              9135,
+              9275,
+              9400,
+              9529,
+              10442,
+              10509,
+              11187,
+              11378,
+              12170,
+              14362
+            ],
+            "name": "Super Mario Kart",
+            "platforms": [
+              5,
+              19,
+              41,
+              137
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 3.897610335260958,
+            "pulse_count": 5,
+            "rating": 81.6297948025035,
+            "rating_count": 230,
+            "release_dates": [
+              19719,
+              143812,
+              143813,
+              143814,
+              194016,
+              194017,
+              194018,
+              194019,
+              194020,
+              194021,
+              194022,
+              194023,
+              194024,
+              194025,
+              194026
+            ],
+            "screenshots": [
+              380499,
+              380500,
+              380501,
+              380502,
+              380503
+            ],
+            "similar_games": [
+              358,
+              1068,
+              1192,
+              1193,
+              2342,
+              2343,
+              2349,
+              2350,
+              45160
+            ],
+            "slug": "super-mario-kart",
+            "summary": "Super Mario Kart is a racing game for the Super Nintendo Entertainment System and the first game of the Mario Kart series, as well as the game that sets precedents to the fictional kart racing genre. Part of this game is heavily based on Super Mario World in terms of graphics and overall theme. Using Mode 7 scaling, the first true kart game on the SNES has you collecting coins to boost your speed while using shells and bananas to stop others on the track.",
+            "tags": [
+              1,
+              40,
+              268435466,
+              268435489,
+              536870937,
+              536871192,
+              536871208,
+              536871396,
+              536871425,
+              536871607,
+              536871936,
+              536871958,
+              536871969,
+              536871987,
+              536872293,
+              536872352,
+              536872399,
+              536872464,
+              536872590,
+              536872594,
+              536872622,
+              536872653,
+              536872656,
+              536873024,
+              536873064,
+              536873147,
+              536873671,
+              536874539,
+              536874824,
+              536875056,
+              536875069,
+              536875073,
+              536875074,
+              536875082,
+              536875091,
+              536875122,
+              536875123,
+              536875128,
+              536875130,
+              536875175,
+              536875186,
+              536875198,
+              536875214,
+              536875215,
+              536875233,
+              536875236,
+              536875356,
+              536875391,
+              536875392,
+              536875421,
+              536875434,
+              536875569,
+              536875590,
+              536875606,
+              536875665,
+              536875668,
+              536875715,
+              536875819,
+              536875823,
+              536875870,
+              536875941,
+              536875955,
+              536876083,
+              536876120,
+              536876214,
+              536876465,
+              536876470,
+              536876616,
+              536876698,
+              536876713,
+              536876788,
+              536876855,
+              536876927,
+              536877050,
+              536877051,
+              536877052,
+              536877066,
+              536877086,
+              536877088,
+              536877097,
+              536877101,
+              536877106,
+              536877116,
+              536877119,
+              536877120,
+              536877627,
+              536877677,
+              536877710,
+              536877736,
+              536877744,
+              536877938,
+              536877982,
+              536878434,
+              536878545,
+              536878606,
+              536879044,
+              536879099,
+              536879791,
+              536880047,
+              536880187,
+              536880312,
+              536880441,
+              536881354,
+              536881421,
+              536882099,
+              536882290,
+              536883082,
+              536885274
+            ],
+            "themes": [
+              1,
+              40
+            ],
+            "total_rating": 85.81489740125176,
+            "total_rating_count": 232,
+            "updated_at": 1595116800,
+            "url": "https://www.igdb.com/games/super-mario-kart",
+            "videos": [
+              35428
+            ],
+            "websites": [
+              112677
+            ],
+            "checksum": "73c3ea8b-b530-3db2-df91-2e0d331f8ac9"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:12 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 2343;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:12 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de0746662956d15f87506ee1dec42dd4f1596144432; expires=Sat, 29-Aug-20
+        21:27:12 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443384d9a0000ec5a0eae1200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2298f5e8cec5a-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 2343,
+            "age_ratings": [
+              340
+            ],
+            "aggregated_rating": 90.0,
+            "aggregated_rating_count": 1,
+            "alternative_names": [
+              15999,
+              16000
+            ],
+            "category": 0,
+            "collection": 449,
+            "cover": 94783,
+            "created_at": 1372636800,
+            "external_games": [
+              141763,
+              1188668
+            ],
+            "first_release_date": 995673600,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2
+            ],
+            "genres": [
+              10,
+              13
+            ],
+            "involved_companies": [
+              5362,
+              5363
+            ],
+            "keywords": [
+              25,
+              280,
+              281,
+              1046,
+              1057,
+              1075,
+              1148,
+              1381,
+              1678,
+              1682,
+              1710,
+              1744,
+              2112,
+              2152,
+              2759,
+              3627,
+              3910,
+              3912,
+              4144,
+              4157,
+              4170,
+              4179,
+              4216,
+              4218,
+              4263,
+              4274,
+              4286,
+              4303,
+              4321,
+              4324,
+              4350,
+              4444,
+              4480,
+              4509,
+              4522,
+              4582,
+              4657,
+              4694,
+              4803,
+              4907,
+              5012,
+              5029,
+              5043,
+              5101,
+              5171,
+              5196,
+              5302,
+              5354,
+              5558,
+              5704,
+              5786,
+              5801,
+              5876,
+              5943,
+              6138,
+              6140,
+              6154,
+              6176,
+              6185,
+              6193,
+              6204,
+              6206,
+              6207,
+              6208,
+              6528,
+              6715,
+              6765,
+              6798,
+              6832,
+              7026,
+              7070,
+              7107,
+              7522,
+              8132,
+              8187,
+              8879,
+              9275,
+              10209,
+              11187,
+              12170,
+              13118,
+              14912,
+              15193
+            ],
+            "name": "Mario Kart: Super Circuit",
+            "platforms": [
+              24,
+              37,
+              41,
+              47
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 3.897610335260958,
+            "pulse_count": 1,
+            "rating": 75.61125673850489,
+            "rating_count": 89,
+            "release_dates": [
+              4957,
+              4958,
+              101237,
+              141019,
+              141020,
+              141021,
+              141022
+            ],
+            "screenshots": [
+              31932,
+              31933,
+              31934,
+              164541,
+              164542,
+              164543,
+              164544,
+              164545,
+              164546
+            ],
+            "similar_games": [
+              1192,
+              1193,
+              2332,
+              2342,
+              2345,
+              2349,
+              2350,
+              3772,
+              45160
+            ],
+            "slug": "mario-kart-super-circuit",
+            "summary": "Classic Mario Kart action is back once again, this time in a colorful, lightning-fast game that you can take anywhere. Mario, Luigi, Peach, Toad, Wario, Yoshi and Bowser are all tearing up the track, tossing Koopa Shells and laying banana peels along the way. \n \nMario Kart Super Circuit puts your driving skills to the test on 40 tracks, each littered with wild weapons and obstacles. Choose to play as any of your favorite characters as you speed around classic and brand-new tracks. If you\u0027re feeling combative, try out the creative weaponry (mushrooms, bananas, thunder bolts, and stars) in Battle mode. Feel like making some friends eat your dust? No problem. Four players can compete in Mario Kart Super Circuit using only one Game Pak! If each player has a copy of the game, bonus features and new modes of play become available.",
+            "tags": [
+              1,
+              35,
+              268435466,
+              268435469,
+              536870937,
+              536871192,
+              536871193,
+              536871958,
+              536871969,
+              536871987,
+              536872060,
+              536872293,
+              536872590,
+              536872594,
+              536872622,
+              536872656,
+              536873024,
+              536873064,
+              536873671,
+              536874539,
+              536874822,
+              536874824,
+              536875056,
+              536875069,
+              536875082,
+              536875091,
+              536875128,
+              536875130,
+              536875175,
+              536875186,
+              536875198,
+              536875215,
+              536875233,
+              536875236,
+              536875262,
+              536875356,
+              536875392,
+              536875421,
+              536875434,
+              536875494,
+              536875569,
+              536875606,
+              536875715,
+              536875819,
+              536875924,
+              536875941,
+              536875955,
+              536876013,
+              536876083,
+              536876108,
+              536876214,
+              536876266,
+              536876470,
+              536876616,
+              536876698,
+              536876713,
+              536876788,
+              536876855,
+              536877050,
+              536877052,
+              536877066,
+              536877088,
+              536877097,
+              536877105,
+              536877116,
+              536877118,
+              536877119,
+              536877120,
+              536877440,
+              536877627,
+              536877677,
+              536877710,
+              536877744,
+              536877938,
+              536877982,
+              536878019,
+              536878434,
+              536879044,
+              536879099,
+              536879791,
+              536880187,
+              536881121,
+              536882099,
+              536883082,
+              536884030,
+              536885824,
+              536886105
+            ],
+            "themes": [
+              1,
+              35
+            ],
+            "total_rating": 82.80562836925245,
+            "total_rating_count": 90,
+            "updated_at": 1592352000,
+            "url": "https://www.igdb.com/games/mario-kart-super-circuit",
+            "videos": [
+              33142
+            ],
+            "websites": [
+              123743,
+              123744
+            ],
+            "checksum": "a5e17a56-508d-37c1-a2e8-d12c3fb6ec10"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:12 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 2345;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:12 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d62d8f1d5229b792f3d06c5a6064f34501596144432; expires=Sat, 29-Aug-20
+        21:27:12 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443384e9d00000f3a9603a200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb22990ffa00f3a-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 2345,
+            "age_ratings": [
+              342,
+              10965
+            ],
+            "aggregated_rating": 90.0,
+            "aggregated_rating_count": 2,
+            "alternative_names": [
+              8185,
+              17651
+            ],
+            "category": 0,
+            "collection": 449,
+            "cover": 94769,
+            "created_at": 1372636800,
+            "external_games": [
+              151070,
+              248349
+            ],
+            "first_release_date": 1131148800,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2
+            ],
+            "genres": [
+              10
+            ],
+            "involved_companies": [
+              44404,
+              44405
+            ],
+            "keywords": [
+              16,
+              25,
+              280,
+              281,
+              282,
+              296,
+              394,
+              575,
+              687,
+              795,
+              1019,
+              1046,
+              1075,
+              1299,
+              1320,
+              1333,
+              1381,
+              1440,
+              1678,
+              1682,
+              1710,
+              1744,
+              2112,
+              2152,
+              2274,
+              2411,
+              2415,
+              2759,
+              3627,
+              3910,
+              3912,
+              3988,
+              4134,
+              4144,
+              4157,
+              4161,
+              4162,
+              4170,
+              4179,
+              4213,
+              4216,
+              4218,
+              4243,
+              4274,
+              4286,
+              4303,
+              4321,
+              4324,
+              4350,
+              4359,
+              4393,
+              4480,
+              4509,
+              4522,
+              4529,
+              4544,
+              4610,
+              4657,
+              4694,
+              4755,
+              4758,
+              4760,
+              4803,
+              4907,
+              4913,
+              4994,
+              4999,
+              5012,
+              5029,
+              5043,
+              5101,
+              5143,
+              5171,
+              5196,
+              5300,
+              5302,
+              5354,
+              5406,
+              5446,
+              5553,
+              5558,
+              5602,
+              5603,
+              5612,
+              5639,
+              5703,
+              5704,
+              5786,
+              5801,
+              5876,
+              5878,
+              5943,
+              5979,
+              5987,
+              6015,
+              6138,
+              6139,
+              6140,
+              6143,
+              6147,
+              6150,
+              6153,
+              6154,
+              6157,
+              6160,
+              6164,
+              6174,
+              6176,
+              6178,
+              6185,
+              6186,
+              6191,
+              6192,
+              6193,
+              6194,
+              6203,
+              6204,
+              6206,
+              6207,
+              6208,
+              6209,
+              6335,
+              6368,
+              6376,
+              6385,
+              6393,
+              6528,
+              6765,
+              6794,
+              6824,
+              6832,
+              7026,
+              7070,
+              7107,
+              7195,
+              7220,
+              7230,
+              7243,
+              7305,
+              7522,
+              7656,
+              7693,
+              8132,
+              8187,
+              8879,
+              8889,
+              9275,
+              9927,
+              10211,
+              10436,
+              10440,
+              10596,
+              10753,
+              11109,
+              11529,
+              11917,
+              11933,
+              12625,
+              12661,
+              13109,
+              13110,
+              13829,
+              16053,
+              16252
+            ],
+            "name": "Mario Kart DS",
+            "platforms": [
+              20,
+              41,
+              47
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 1.668679308137144,
+            "rating": 81.6131724359752,
+            "rating_count": 196,
+            "release_dates": [
+              65598,
+              65599,
+              65601,
+              65602,
+              65603,
+              65604,
+              65605,
+              141016,
+              141017,
+              141018
+            ],
+            "screenshots": [
+              164530,
+              164531,
+              164532,
+              164533,
+              164534,
+              164535,
+              164536,
+              164537,
+              164538,
+              164539,
+              164540
+            ],
+            "similar_games": [
+              358,
+              1068,
+              1192,
+              2332,
+              2342,
+              2343,
+              2349,
+              2350,
+              3349
+            ],
+            "slug": "mario-kart-ds",
+            "summary": "Mario Kart DS is the continuation of the long running racing game series that began on the Super Nintendo. It features 16 new tracks as well as 16 tracks from the previous 4 games, with each set split up into the Nitro and Retro Grand Prix respectively. Eight racers are initially available, each with two go-karts to choose from. A number of characters and additional karts are also available to unlock. New items have been added to the arsenal, including a Blooper squid that squirts ink onto the screens of other players and a Bullet Bill power up that transforms the player into a giant, fast-travelling bullet on autopilot.",
+            "tags": [
+              35,
+              268435466,
+              536870928,
+              536870937,
+              536871192,
+              536871193,
+              536871194,
+              536871208,
+              536871306,
+              536871487,
+              536871599,
+              536871707,
+              536871931,
+              536871958,
+              536871987,
+              536872211,
+              536872232,
+              536872245,
+              536872293,
+              536872352,
+              536872590,
+              536872594,
+              536872622,
+              536872656,
+              536873024,
+              536873064,
+              536873186,
+              536873323,
+              536873327,
+              536873671,
+              536874539,
+              536874822,
+              536874824,
+              536874900,
+              536875046,
+              536875056,
+              536875069,
+              536875073,
+              536875074,
+              536875082,
+              536875091,
+              536875125,
+              536875128,
+              536875130,
+              536875155,
+              536875186,
+              536875198,
+              536875215,
+              536875233,
+              536875236,
+              536875262,
+              536875271,
+              536875305,
+              536875392,
+              536875421,
+              536875434,
+              536875441,
+              536875456,
+              536875522,
+              536875569,
+              536875606,
+              536875667,
+              536875670,
+              536875672,
+              536875715,
+              536875819,
+              536875825,
+              536875906,
+              536875911,
+              536875924,
+              536875941,
+              536875955,
+              536876013,
+              536876055,
+              536876083,
+              536876108,
+              536876212,
+              536876214,
+              536876266,
+              536876318,
+              536876358,
+              536876465,
+              536876470,
+              536876514,
+              536876515,
+              536876524,
+              536876551,
+              536876615,
+              536876616,
+              536876698,
+              536876713,
+              536876788,
+              536876790,
+              536876855,
+              536876891,
+              536876899,
+              536876927,
+              536877050,
+              536877051,
+              536877052,
+              536877055,
+              536877059,
+              536877062,
+              536877065,
+              536877066,
+              536877069,
+              536877072,
+              536877076,
+              536877086,
+              536877088,
+              536877090,
+              536877097,
+              536877098,
+              536877103,
+              536877104,
+              536877105,
+              536877106,
+              536877115,
+              536877116,
+              536877118,
+              536877119,
+              536877120,
+              536877121,
+              536877247,
+              536877280,
+              536877288,
+              536877297,
+              536877305,
+              536877440,
+              536877677,
+              536877706,
+              536877736,
+              536877744,
+              536877938,
+              536877982,
+              536878019,
+              536878107,
+              536878132,
+              536878142,
+              536878155,
+              536878217,
+              536878434,
+              536878568,
+              536878605,
+              536879044,
+              536879099,
+              536879791,
+              536879801,
+              536880187,
+              536880839,
+              536881123,
+              536881348,
+              536881352,
+              536881508,
+              536881665,
+              536882021,
+              536882441,
+              536882829,
+              536882845,
+              536883537,
+              536883573,
+              536884021,
+              536884022,
+              536884741,
+              536886965,
+              536887164
+            ],
+            "themes": [
+              35
+            ],
+            "time_to_beat": 2345,
+            "total_rating": 85.8065862179876,
+            "total_rating_count": 198,
+            "updated_at": 1595980800,
+            "url": "https://www.igdb.com/games/mario-kart-ds",
+            "videos": [
+              12259,
+              12260
+            ],
+            "websites": [
+              12838,
+              12839,
+              12840
+            ],
+            "checksum": "740c355c-2709-8223-78d9-f0c42cc2d257"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:12 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 2349;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1289595ac49a7a822991c2f57b00eb541596144433; expires=Sat, 29-Aug-20
+        21:27:13 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443384f96000057e79d14b200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2299289eb57e7-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 2349,
+            "age_ratings": [
+              351,
+              21634
+            ],
+            "aggregated_rating": 83.5,
+            "aggregated_rating_count": 6,
+            "alternative_names": [
+              13955,
+              13956
+            ],
+            "artworks": [
+              4490,
+              4491,
+              4492
+            ],
+            "category": 0,
+            "collection": 449,
+            "cover": 94758,
+            "created_at": 1372636800,
+            "external_games": [
+              128181,
+              250216
+            ],
+            "first_release_date": 1322784000,
+            "franchise": 24,
+            "franchises": [
+              24,
+              845
+            ],
+            "game_modes": [
+              1,
+              2,
+              4
+            ],
+            "genres": [
+              10
+            ],
+            "hypes": 1,
+            "involved_companies": [
+              31985,
+              31986
+            ],
+            "keywords": [
+              25,
+              280,
+              394,
+              1075,
+              1299,
+              1333,
+              1678,
+              1682,
+              1744,
+              2112,
+              2152,
+              2411,
+              3627,
+              3794,
+              3901,
+              3912,
+              3988,
+              4144,
+              4157,
+              4179,
+              4188,
+              4216,
+              4218,
+              4274,
+              4303,
+              4321,
+              4324,
+              4359,
+              4479,
+              4638,
+              4647,
+              4657,
+              4678,
+              4803,
+              4841,
+              4842,
+              4907,
+              4940,
+              5011,
+              5012,
+              5043,
+              5143,
+              5553,
+              5558,
+              5561,
+              5727,
+              5801,
+              5876,
+              5878,
+              5987,
+              6015,
+              6053,
+              6138,
+              6139,
+              6140,
+              6143,
+              6145,
+              6153,
+              6154,
+              6158,
+              6172,
+              6174,
+              6176,
+              6178,
+              6185,
+              6191,
+              6192,
+              6198,
+              6204,
+              6206,
+              6207,
+              6208,
+              6209,
+              6376,
+              6528,
+              6715,
+              6765,
+              7121,
+              7220,
+              7223,
+              7239,
+              7243,
+              7402,
+              7403,
+              7522,
+              8187,
+              8879,
+              10444,
+              11782,
+              11894,
+              12462,
+              12661,
+              12662,
+              12663
+            ],
+            "name": "Mario Kart 7",
+            "platforms": [
+              37
+            ],
+            "player_perspectives": [
+              2
+            ],
+            "popularity": 3.451824129836195,
+            "pulse_count": 4,
+            "rating": 81.01215733501431,
+            "rating_count": 127,
+            "release_dates": [
+              4976,
+              141009,
+              141010,
+              141011
+            ],
+            "screenshots": [
+              2726,
+              2727,
+              24231,
+              24232,
+              24233,
+              164498,
+              164499,
+              164500,
+              164501,
+              164502,
+              164503,
+              164504
+            ],
+            "similar_games": [
+              1079,
+              1192,
+              2180,
+              2183,
+              2332,
+              2342,
+              2343,
+              2345,
+              2350
+            ],
+            "slug": "mario-kart-7",
+            "summary": "The seventh installment of the fan-favorite Mario Kart franchise brings Mushroom Kingdom racing fun into glorious 3D. For the first time, drivers explore new competitive kart possibilities, such as soaring through the skies or plunging to the depths of the sea. New courses, strategic new abilities and customizable karts bring the racing excitement to new heights.",
+            "tags": [
+              268435466,
+              536870937,
+              536871192,
+              536871306,
+              536871987,
+              536872211,
+              536872245,
+              536872590,
+              536872594,
+              536872656,
+              536873024,
+              536873064,
+              536873323,
+              536874539,
+              536874706,
+              536874813,
+              536874824,
+              536874900,
+              536875056,
+              536875069,
+              536875091,
+              536875100,
+              536875128,
+              536875130,
+              536875186,
+              536875215,
+              536875233,
+              536875236,
+              536875271,
+              536875391,
+              536875550,
+              536875559,
+              536875569,
+              536875590,
+              536875715,
+              536875753,
+              536875754,
+              536875819,
+              536875852,
+              536875923,
+              536875924,
+              536875955,
+              536876055,
+              536876465,
+              536876470,
+              536876473,
+              536876639,
+              536876713,
+              536876788,
+              536876790,
+              536876899,
+              536876927,
+              536876965,
+              536877050,
+              536877051,
+              536877052,
+              536877055,
+              536877057,
+              536877065,
+              536877066,
+              536877070,
+              536877084,
+              536877086,
+              536877088,
+              536877090,
+              536877097,
+              536877103,
+              536877104,
+              536877110,
+              536877116,
+              536877118,
+              536877119,
+              536877120,
+              536877121,
+              536877288,
+              536877440,
+              536877627,
+              536877677,
+              536878033,
+              536878132,
+              536878135,
+              536878151,
+              536878155,
+              536878314,
+              536878315,
+              536878434,
+              536879099,
+              536879791,
+              536881356,
+              536882694,
+              536882806,
+              536883374,
+              536883573,
+              536883574,
+              536883575
+            ],
+            "total_rating": 82.25607866750715,
+            "total_rating_count": 133,
+            "updated_at": 1594857600,
+            "url": "https://www.igdb.com/games/mario-kart-7",
+            "videos": [
+              1355
+            ],
+            "websites": [
+              645,
+              7510
+            ],
+            "checksum": "0a9de592-4f5a-9dff-6fc9-f50feea1aaa1"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:13 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 2350;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3fa451f629847a2c2c1575765780c10d1596144433; expires=Sat, 29-Aug-20
+        21:27:13 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433850aa00000e5ef72a6200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229944d210e5e-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        WwogIHsKICAgICJpZCI6IDIzNTAsCiAgICAiYWdlX3JhdGluZ3MiOiBbCiAgICAgIDE2MTEyLAogICAgICAyMjA3MwogICAgXSwKICAgICJhZ2dyZWdhdGVkX3JhdGluZyI6IDkwLjgsCiAgICAiYWdncmVnYXRlZF9yYXRpbmdfY291bnQiOiAxNiwKICAgICJhbHRlcm5hdGl2ZV9uYW1lcyI6IFsKICAgICAgNzk3LAogICAgICAxMDI5NSwKICAgICAgMTAyOTcKICAgIF0sCiAgICAiYXJ0d29ya3MiOiBbCiAgICAgIDQ0OTMsCiAgICAgIDQ0OTQsCiAgICAgIDQ0OTUsCiAgICAgIDQ0OTYsCiAgICAgIDQ0OTcsCiAgICAgIDQ0OTgsCiAgICAgIDQ0OTksCiAgICAgIDQ1MDAsCiAgICAgIDU5MTYsCiAgICAgIDU5MTcKICAgIF0sCiAgICAiY2F0ZWdvcnkiOiAwLAogICAgImNvbGxlY3Rpb24iOiA0NDksCiAgICAiY292ZXIiOiA5NDc0MiwKICAgICJjcmVhdGVkX2F0IjogMTM3MjYzNjgwMCwKICAgICJkbGNzIjogWwogICAgICAyMjE0MSwKICAgICAgMjIxNDYKICAgIF0sCiAgICAiZXh0ZXJuYWxfZ2FtZXMiOiBbCiAgICAgIDExODAxOCwKICAgICAgMTg5NTc4LAogICAgICAyNDU0NTkKICAgIF0sCiAgICAiZmlyc3RfcmVsZWFzZV9kYXRlIjogMTQwMTMyMTYwMCwKICAgICJmcmFuY2hpc2UiOiAyNCwKICAgICJmcmFuY2hpc2VzIjogWwogICAgICAyNCwKICAgICAgODQ1CiAgICBdLAogICAgImdhbWVfbW9kZXMiOiBbCiAgICAgIDEsCiAgICAgIDIsCiAgICAgIDQKICAgIF0sCiAgICAiZ2VucmVzIjogWwogICAgICAxMCwKICAgICAgMTQKICAgIF0sCiAgICAiaHlwZXMiOiAxMCwKICAgICJpbnZvbHZlZF9jb21wYW5pZXMiOiBbCiAgICAgIDU1MjYsCiAgICAgIDE5MzA4LAogICAgICA4MzU5NQogICAgXSwKICAgICJrZXl3b3JkcyI6IFsKICAgICAgMjk2LAogICAgICA4MzksCiAgICAgIDk3MCwKICAgICAgMTAyNiwKICAgICAgMTA3NSwKICAgICAgMTMzMywKICAgICAgMTY4MiwKICAgICAgMjA3MSwKICAgICAgMjIyOSwKICAgICAgMjM2MiwKICAgICAgMzIyNCwKICAgICAgMzMzNiwKICAgICAgNDE1NywKICAgICAgNDE4OCwKICAgICAgNDIxOCwKICAgICAgNDI4MiwKICAgICAgNDMwMywKICAgICAgNDQzOCwKICAgICAgNDQ2NiwKICAgICAgNDQ3OSwKICAgICAgNDQ4MCwKICAgICAgNDY1NywKICAgICAgNDcwNiwKICAgICAgNDcwNywKICAgICAgNDgwMywKICAgICAgNDg0MiwKICAgICAgNDg2OSwKICAgICAgNDkwNywKICAgICAgNDkxMSwKICAgICAgNDkxMywKICAgICAgNDkzMSwKICAgICAgNDkzMiwKICAgICAgNDkzMywKICAgICAgNDk0MCwKICAgICAgNDk4NCwKICAgICAgNTAxMiwKICAgICAgNTMwNiwKICAgICAgNTQxNywKICAgICAgNTUyMywKICAgICAgNTU1MywKICAgICAgNTU4NCwKICAgICAgNTYyOSwKICAgICAgNTYzMiwKICAgICAgNTY2OSwKICAgICAgNTcyNywKICAgICAgNjAxMywKICAgICAgNjAxNSwKICAgICAgNjAzNiwKICAgICAgNjEyOSwKICAgICAgNjEzOCwKICAgICAgNjEzOSwKICAgICAgNjE0MCwKICAgICAgNjE0MywKICAgICAgNjE0NSwKICAgICAgNjE0OCwKICAgICAgNjE1MywKICAgICAgNjE1NCwKICAgICAgNjE1NiwKICAgICAgNjE1NywKICAgICAgNjE3MCwKICAgICAgNjE3MiwKICAgICAgNjE3NCwKICAgICAgNjE3NiwKICAgICAgNjE3OCwKICAgICAgNjE4MiwKICAgICAgNjE4NSwKICAgICAgNjE4NiwKICAgICAgNjE4NywKICAgICAgNjE4OCwKICAgICAgNjE4OSwKICAgICAgNjE5MCwKICAgICAgNjE5MSwKICAgICAgNjE5MiwKICAgICAgNjE5MywKICAgICAgNjE5NCwKICAgICAgNjE5NSwKICAgICAgNjE5NiwKICAgICAgNjE5NywKICAgICAgNjE5OCwKICAgICAgNjE5OSwKICAgICAgNjIwMCwKICAgICAgNjIwMSwKICAgICAgNjIwMiwKICAgICAgNjIwMywKICAgICAgNjIwNCwKICAgICAgNjIwNSwKICAgICAgNjIwNiwKICAgICAgNjIwNywKICAgICAgNjIwOCwKICAgICAgNjIwOQogICAgXSwKICAgICJuYW1lIjogIk1hcmlvIEthcnQgOCIsCiAgICAicGxhdGZvcm1zIjogWwogICAgICA0MQogICAgXSwKICAgICJwbGF5ZXJfcGVyc3BlY3RpdmVzIjogWwogICAgICAyCiAgICBdLAogICAgInBvcHVsYXJpdHkiOiA5LjQ2OTkzNzkwMzA3MDQ5MywKICAgICJwdWxzZV9jb3VudCI6IDI0LAogICAgInJhdGluZyI6IDg3LjgwMDA5MjYzMzY2MTY5LAogICAgInJhdGluZ19jb3VudCI6IDM1MiwKICAgICJyZWxlYXNlX2RhdGVzIjogWwogICAgICAxNDEwMTIsCiAgICAgIDE0MTAxMywKICAgICAgMTQxMDE0CiAgICBdLAogICAgInNjcmVlbnNob3RzIjogWwogICAgICAyNzc2LAogICAgICAyNzc3LAogICAgICAyNzc4LAogICAgICAyNzc5LAogICAgICAyNzgwLAogICAgICAxNjQ1MDUsCiAgICAgIDE2NDUwNiwKICAgICAgMTY0NTA3LAogICAgICAxNjQ1MDgsCiAgICAgIDE2NDUwOSwKICAgICAgMTY0NTEwLAogICAgICAxNjQ1MTEKICAgIF0sCiAgICAic2ltaWxhcl9nYW1lcyI6IFsKICAgICAgMTA3NCwKICAgICAgMTA3NywKICAgICAgMTA3OSwKICAgICAgMjE4MCwKICAgICAgMjE4MywKICAgICAgMjMzMiwKICAgICAgMjM0MiwKICAgICAgMjM0OSwKICAgICAgMjY3NTgKICAgIF0sCiAgICAic2x1ZyI6ICJtYXJpby1rYXJ0LTgiLAogICAgInN1bW1hcnkiOiAiVHVybiB5b3VyIHJhY2luZyBleHBlcmllbmNlIHVwc2lkZSBkb3duISBOaW50ZW5kb+KAmXMgTWFyaW8gS2FydCBmcmFuY2hpc2UgY29tZXMgdG8gdGhlIFdpaSBVIGNvbnNvbGUgaW4gZnVsbCBIRCwgaW50cm9kdWNpbmcgbmV3IHJhY2luZyBjaXJjdWl0IGRlc2lnbnMgYW5kIGFudGktZ3Jhdml0eSBrYXJ0cyB0aGF0IHdpbGwgaGF2ZSBwbGF5ZXJzIGRyaXZpbmcgdXBzaWRlIGRvd24uIEFuZCBmb3IgdGhlIGZpcnN0IHRpbWUsIGFsbCBvZiBCb3dzZXLigJlzIHNldmVuIEtvb3BhbGluZ3MgYXJlIHBsYXlhYmxlIGNoYXJhY3RlcnMtLSBnZXQgYSB0YXN0ZSBvZiBiZWluZyBiYWQgb24gdGhlIHJhY2UgdHJhY2sgYnkgcGxheWluZyBhcyBJZ2d5LCBMYXJyeSwgTGVtbXksIEx1ZHdpZywgTW9ydG9uLCBSb3kgYW5kIFdlbmR5LiBQbGF5ZXJzIHdpbGwgYWxzbyBlbmpveSBhIHZhcmlldHkgb2Ygc2VyaWVzLWZhdm9yaXRlIGZlYXR1cmVzLCBpbmNsdWRpbmcgdGhlIHJldHVybiBvZiAxMi1wbGF5ZXIgb25saW5lIGNvbXBldGl0aXZlIHBsYXksIGhhbmctZ2xpZGVycywgdW5kZXJ3YXRlciByYWNpbmcgYW5kIG1vdG9yYmlrZXMuIiwKICAgICJ0YWdzIjogWwogICAgICAxLAogICAgICAxOCwKICAgICAgMzUsCiAgICAgIDI2ODQzNTQ2NiwKICAgICAgMjY4NDM1NDcwLAogICAgICA1MzY4NzEyMDgsCiAgICAgIDUzNjg3MTc1MSwKICAgICAgNTM2ODcxODgyLAogICAgICA1MzY4NzE5MzgsCiAgICAgIDUzNjg3MTk4NywKICAgICAgNTM2ODcyMjQ1LAogICAgICA1MzY4NzI1OTQsCiAgICAgIDUzNjg3Mjk4MywKICAgICAgNTM2ODczMTQxLAogICAgICA1MzY4NzMyNzQsCiAgICAgIDUzNjg3NDEzNiwKICAgICAgNTM2ODc0MjQ4LAogICAgICA1MzY4NzUwNjksCiAgICAgIDUzNjg3NTEwMCwKICAgICAgNTM2ODc1MTMwLAogICAgICA1MzY4NzUxOTQsCiAgICAgIDUzNjg3NTIxNSwKICAgICAgNTM2ODc1MzUwLAogICAgICA1MzY4NzUzNzgsCiAgICAgIDUzNjg3NTM5MSwKICAgICAgNTM2ODc1MzkyLAogICAgICA1MzY4NzU1NjksCiAgICAgIDUzNjg3NTYxOCwKICAgICAgNTM2ODc1NjE5LAogICAgICA1MzY4NzU3MTUsCiAgICAgIDUzNjg3NTc1NCwKICAgICAgNTM2ODc1NzgxLAogICAgICA1MzY4NzU4MTksCiAgICAgIDUzNjg3NTgyMywKICAgICAgNTM2ODc1ODI1LAogICAgICA1MzY4NzU4NDMsCiAgICAgIDUzNjg3NTg0NCwKICAgICAgNTM2ODc1ODQ1LAogICAgICA1MzY4NzU4NTIsCiAgICAgIDUzNjg3NTg5NiwKICAgICAgNTM2ODc1OTI0LAogICAgICA1MzY4NzYyMTgsCiAgICAgIDUzNjg3NjMyOSwKICAgICAgNTM2ODc2NDM1LAogICAgICA1MzY4NzY0NjUsCiAgICAgIDUzNjg3NjQ5NiwKICAgICAgNTM2ODc2NTQxLAogICAgICA1MzY4NzY1NDQsCiAgICAgIDUzNjg3NjU4MSwKICAgICAgNTM2ODc2NjM5LAogICAgICA1MzY4NzY5MjUsCiAgICAgIDUzNjg3NjkyNywKICAgICAgNTM2ODc2OTQ4LAogICAgICA1MzY4NzcwNDEsCiAgICAgIDUzNjg3NzA1MCwKICAgICAgNTM2ODc3MDUxLAogICAgICA1MzY4NzcwNTIsCiAgICAgIDUzNjg3NzA1NSwKICAgICAgNTM2ODc3MDU3LAogICAgICA1MzY4NzcwNjAsCiAgICAgIDUzNjg3NzA2NSwKICAgICAgNTM2ODc3MDY2LAogICAgICA1MzY4NzcwNjgsCiAgICAgIDUzNjg3NzA2OSwKICAgICAgNTM2ODc3MDgyLAogICAgICA1MzY4NzcwODQsCiAgICAgIDUzNjg3NzA4NiwKICAgICAgNTM2ODc3MDg4LAogICAgICA1MzY4NzcwOTAsCiAgICAgIDUzNjg3NzA5NCwKICAgICAgNTM2ODc3MDk3LAogICAgICA1MzY4NzcwOTgsCiAgICAgIDUzNjg3NzA5OSwKICAgICAgNTM2ODc3MTAwLAogICAgICA1MzY4NzcxMDEsCiAgICAgIDUzNjg3NzEwMiwKICAgICAgNTM2ODc3MTAzLAogICAgICA1MzY4NzcxMDQsCiAgICAgIDUzNjg3NzEwNSwKICAgICAgNTM2ODc3MTA2LAogICAgICA1MzY4NzcxMDcsCiAgICAgIDUzNjg3NzEwOCwKICAgICAgNTM2ODc3MTA5LAogICAgICA1MzY4NzcxMTAsCiAgICAgIDUzNjg3NzExMSwKICAgICAgNTM2ODc3MTEyLAogICAgICA1MzY4NzcxMTMsCiAgICAgIDUzNjg3NzExNCwKICAgICAgNTM2ODc3MTE1LAogICAgICA1MzY4NzcxMTYsCiAgICAgIDUzNjg3NzExNywKICAgICAgNTM2ODc3MTE4LAogICAgICA1MzY4NzcxMTksCiAgICAgIDUzNjg3NzEyMCwKICAgICAgNTM2ODc3MTIxCiAgICBdLAogICAgInRoZW1lcyI6IFsKICAgICAgMSwKICAgICAgMTgsCiAgICAgIDM1CiAgICBdLAogICAgInRvdGFsX3JhdGluZyI6IDg5LjMwMDA0NjMxNjgzMDg0LAogICAgInRvdGFsX3JhdGluZ19jb3VudCI6IDM2OCwKICAgICJ1cGRhdGVkX2F0IjogMTU5NTYzNTIwMCwKICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cuaWdkYi5jb20vZ2FtZXMvbWFyaW8ta2FydC04IiwKICAgICJ2aWRlb3MiOiBbCiAgICAgIDEzNTYKICAgIF0sCiAgICAid2Vic2l0ZXMiOiBbCiAgICAgIDY2MCwKICAgICAgNTI1MjEsCiAgICAgIDYzMTYzLAogICAgICA2MzE2NAogICAgXSwKICAgICJjaGVja3N1bSI6ICI5NGEwYjRlYi0wOGI1LThiMjktNWE1Yi1lZjI4NGQ1MTIwNjciCiAgfQpd
+  recorded_at: Thu, 30 Jul 2020 21:27:13 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/games
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 3349;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d735301962c23ca773208b74171f0bf0e1596144433; expires=Sat, 29-Aug-20
+        21:27:13 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433851a80000c81e2d143200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb22995d9d3c81e-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        WwogIHsKICAgICJpZCI6IDMzNDksCiAgICAiYWdlX3JhdGluZ3MiOiBbCiAgICAgIDE3NjEsCiAgICAgIDY1NjEKICAgIF0sCiAgICAiYWdncmVnYXRlZF9yYXRpbmciOiA4OS41LAogICAgImFnZ3JlZ2F0ZWRfcmF0aW5nX2NvdW50IjogMiwKICAgICJhbHRlcm5hdGl2ZV9uYW1lcyI6IFsKICAgICAgNjU2MSwKICAgICAgMTc0NjMsCiAgICAgIDI2MjA4LAogICAgICAzMTI4MywKICAgICAgMzMyOTIKICAgIF0sCiAgICAiY2F0ZWdvcnkiOiAwLAogICAgImNvbGxlY3Rpb24iOiA1OTMsCiAgICAiY292ZXIiOiAxMDA5MDAsCiAgICAiY3JlYXRlZF9hdCI6IDEzODg3MDcyMDAsCiAgICAiZXh0ZXJuYWxfZ2FtZXMiOiBbCiAgICAgIDE1MDIxNSwKICAgICAgMjQ1OTM0LAogICAgICAxNzA4MzkzCiAgICBdLAogICAgImZpcnN0X3JlbGVhc2VfZGF0ZSI6IDEwOTA0NTQ0MDAsCiAgICAiZnJhbmNoaXNlcyI6IFsKICAgICAgODQ1CiAgICBdLAogICAgImdhbWVfZW5naW5lcyI6IFsKICAgICAgNTIKICAgIF0sCiAgICAiZ2FtZV9tb2RlcyI6IFsKICAgICAgMQogICAgXSwKICAgICJnZW5yZXMiOiBbCiAgICAgIDEyLAogICAgICAzMQogICAgXSwKICAgICJpbnZvbHZlZF9jb21wYW5pZXMiOiBbCiAgICAgIDg3NTEsCiAgICAgIDg3NTIKICAgIF0sCiAgICAia2V5d29yZHMiOiBbCiAgICAgIDE2LAogICAgICAxMzcsCiAgICAgIDIxNSwKICAgICAgMjI2LAogICAgICAyOTYsCiAgICAgIDMwMSwKICAgICAgMzMyLAogICAgICAzNTAsCiAgICAgIDM5NCwKICAgICAgNDE1LAogICAgICA0NzgsCiAgICAgIDU1OCwKICAgICAgNTg5LAogICAgICA1OTQsCiAgICAgIDY4NywKICAgICAgNzU4LAogICAgICAxMDE5LAogICAgICAxMDI2LAogICAgICAxMDI3LAogICAgICAxMDU3LAogICAgICAxMDk4LAogICAgICAxMjg5LAogICAgICAxMzIwLAogICAgICAxMzQ4LAogICAgICAxMzgxLAogICAgICAxMzk1LAogICAgICAxNTIzLAogICAgICAxNjgyLAogICAgICAxNzM1LAogICAgICAxNzM3LAogICAgICAxODg2LAogICAgICAxODk4LAogICAgICAyMDQ3LAogICAgICAyMDcxLAogICAgICAyMTEyLAogICAgICAyMTUyLAogICAgICAyMTY1LAogICAgICAyMTk5LAogICAgICAyMjc0LAogICAgICAyNDE1LAogICAgICAyNDQwLAogICAgICAyNTYxLAogICAgICAyNjAxLAogICAgICAyNjA0LAogICAgICAyNzU5LAogICAgICAzMDYxLAogICAgICAzMjk3LAogICAgICAzNDg2LAogICAgICA0MTQzLAogICAgICA0MTQ0LAogICAgICA0MTYxLAogICAgICA0MTYyLAogICAgICA0MTcxLAogICAgICA0MTgyLAogICAgICA0MjE4LAogICAgICA0MjE5LAogICAgICA0MjM5LAogICAgICA0MjQ0LAogICAgICA0MjY2LAogICAgICA0MjcxLAogICAgICA0Mjg0LAogICAgICA0Mjg4LAogICAgICA0MzMyLAogICAgICA0MzUwLAogICAgICA0MzUzLAogICAgICA0MzU5LAogICAgICA0Mzc0LAogICAgICA0Mzk2LAogICAgICA0Mzk3LAogICAgICA0Mzk4LAogICAgICA0NDAyLAogICAgICA0NDA1LAogICAgICA0NDE0LAogICAgICA0NDE4LAogICAgICA0NDI4LAogICAgICA0NDY4LAogICAgICA0NDc5LAogICAgICA0NDgwLAogICAgICA0NDg0LAogICAgICA0NTA5LAogICAgICA0NTQzLAogICAgICA0NTczLAogICAgICA0NTkwLAogICAgICA0NTkzLAogICAgICA0NjEyLAogICAgICA0NjEzLAogICAgICA0NzAxLAogICAgICA0NzA5LAogICAgICA0NzIwLAogICAgICA0NzI3LAogICAgICA0NzM1LAogICAgICA0NzM4LAogICAgICA0NzcyLAogICAgICA0Nzg3LAogICAgICA0ODAxLAogICAgICA0ODI4LAogICAgICA0ODI5LAogICAgICA0ODQ2LAogICAgICA0ODQ5LAogICAgICA0ODUyLAogICAgICA0ODU2LAogICAgICA0ODY3LAogICAgICA0ODg4LAogICAgICA0ODkxLAogICAgICA0OTExLAogICAgICA0OTI1LAogICAgICA0OTU4LAogICAgICA0OTkxLAogICAgICA1MDEyLAogICAgICA1MDE2LAogICAgICA1MDIyLAogICAgICA1MDQwLAogICAgICA1MTE1LAogICAgICA1MTU3LAogICAgICA1MTY0LAogICAgICA1MTcwLAogICAgICA1MTcxLAogICAgICA1MTcyLAogICAgICA1MTkzLAogICAgICA1MjIwLAogICAgICA1MjU4LAogICAgICA1MzMwLAogICAgICA1MzU4LAogICAgICA1MzYyLAogICAgICA1Mzc1LAogICAgICA1Mzg3LAogICAgICA1MzkxLAogICAgICA1NDA0LAogICAgICA1NDQxLAogICAgICA1NDQ1LAogICAgICA1NTM2LAogICAgICA1NTM4LAogICAgICA1NTY3LAogICAgICA1NTc4LAogICAgICA1NTg3LAogICAgICA1NTk0LAogICAgICA1NjAwLAogICAgICA1NjU4LAogICAgICA1NjU5LAogICAgICA1Njc3LAogICAgICA1NzAzLAogICAgICA1NzU5LAogICAgICA1ODAxLAogICAgICA1ODAzLAogICAgICA1OTY3LAogICAgICA1OTY4LAogICAgICA1OTk4LAogICAgICA2MDA3LAogICAgICA2MDQwLAogICAgICA2MDYyLAogICAgICA2MDg0LAogICAgICA2MTAyLAogICAgICA2MTIzLAogICAgICA2MTM2LAogICAgICA2MTM3LAogICAgICA2MTM4LAogICAgICA2MTM5LAogICAgICA2MTQwLAogICAgICA2MTQzLAogICAgICA2MTQ1LAogICAgICA2MTQ3LAogICAgICA2MTQ4LAogICAgICA2MTQ5LAogICAgICA2MTUwLAogICAgICA2MTUzLAogICAgICA2MTU0LAogICAgICA2MTU1LAogICAgICA2MTU2LAogICAgICA2MTU3LAogICAgICA2MTU5LAogICAgICA2MTYwLAogICAgICA2MTcyLAogICAgICA2MTc2LAogICAgICA2MTc3LAogICAgICA2MTc4LAogICAgICA2MTc5LAogICAgICA2MTkyLAogICAgICA2MjcwLAogICAgICA2MzE4LAogICAgICA2MzkzLAogICAgICA2NTIyLAogICAgICA2NTM5LAogICAgICA2NTQxLAogICAgICA2NjA0LAogICAgICA2NjIzLAogICAgICA2NjUzLAogICAgICA2NjYzLAogICAgICA2Njc3LAogICAgICA2NzQ1LAogICAgICA2Nzg0LAogICAgICA2Nzk0LAogICAgICA2Nzk4LAogICAgICA2ODA2LAogICAgICA2ODI0LAogICAgICA2ODQ4LAogICAgICA2ODkyLAogICAgICA2OTAzLAogICAgICA2OTEwLAogICAgICA3MTUzLAogICAgICA3MTY2LAogICAgICA3MTc2LAogICAgICA3MjM2LAogICAgICA3MjQwLAogICAgICA3MjQxLAogICAgICA3MjQyLAogICAgICA3MjQ1LAogICAgICA3MjQ4LAogICAgICA3MzQ1LAogICAgICA3MzcyLAogICAgICA3Mzk2LAogICAgICA3NDE2LAogICAgICA3NDgzLAogICAgICA3NTUyLAogICAgICA3NTUzLAogICAgICA3NjAzLAogICAgICA3NjIwLAogICAgICA3NjI3LAogICAgICA3NjUzLAogICAgICA3Njk0LAogICAgICA4MTg2LAogICAgICA4MTkzLAogICAgICA4ODM4LAogICAgICA4ODc5LAogICAgICA4ODk0LAogICAgICA4OTk0LAogICAgICA5MjQ3LAogICAgICA5MzM5LAogICAgICA5NDE2LAogICAgICA5NDQ4LAogICAgICA5NDkzLAogICAgICA5NTEzLAogICAgICA5NTE2LAogICAgICA5NTI5LAogICAgICA5NjAzLAogICAgICAxMDA1NiwKICAgICAgMTA0NDIsCiAgICAgIDExMDc2LAogICAgICAxMTM3OCwKICAgICAgMTE1ODUsCiAgICAgIDExOTE3LAogICAgICAxMTkyMCwKICAgICAgMTE5MzMsCiAgICAgIDEyMjEwLAogICAgICAxMjI0MiwKICAgICAgMTIzNTcsCiAgICAgIDEyNjU1LAogICAgICAxMzA5NCwKICAgICAgMTMxMTAsCiAgICAgIDEzODI5LAogICAgICAxNDU3NiwKICAgICAgMTQ5ODksCiAgICAgIDE1MDkwLAogICAgICAxNTM5OCwKICAgICAgMTU4NDgsCiAgICAgIDE2MDk3LAogICAgICAxNjE5NiwKICAgICAgMTYxOTcsCiAgICAgIDE2MTk4CiAgICBdLAogICAgIm5hbWUiOiAiUGFwZXIgTWFyaW86IFRoZSBUaG91c2FuZC1ZZWFyIERvb3IiLAogICAgInBsYXRmb3JtcyI6IFsKICAgICAgMjEKICAgIF0sCiAgICAicGxheWVyX3BlcnNwZWN0aXZlcyI6IFsKICAgICAgMgogICAgXSwKICAgICJwb3B1bGFyaXR5IjogMTguNjA4NTU1MTE0Mjc4MTMsCiAgICAicHVsc2VfY291bnQiOiAxLAogICAgInJhdGluZyI6IDkyLjk0OTAxNjYwNDkwODQsCiAgICAicmF0aW5nX2NvdW50IjogMjA3LAogICAgInJlbGVhc2VfZGF0ZXMiOiBbCiAgICAgIDI4NTk5LAogICAgICAyODYwMCwKICAgICAgMjg2MDEsCiAgICAgIDI4NjAyCiAgICBdLAogICAgInNjcmVlbnNob3RzIjogWwogICAgICAyNDI0NiwKICAgICAgMjQyNDcsCiAgICAgIDI0MjQ4LAogICAgICAyNDI0OSwKICAgICAgMTY4MjQ3LAogICAgICAxNjgyNDgsCiAgICAgIDE2ODI0OSwKICAgICAgMTY4MjUwLAogICAgICAxNjgyNTEsCiAgICAgIDE2ODI1MiwKICAgICAgMTY4MjUzCiAgICBdLAogICAgInNpbWlsYXJfZ2FtZXMiOiBbCiAgICAgIDM1OCwKICAgICAgMTAyNiwKICAgICAgMTAzNSwKICAgICAgMTA2OCwKICAgICAgMTA3OCwKICAgICAgMjE4MCwKICAgICAgMjE5MSwKICAgICAgMzM0MCwKICAgICAgMzM2MwogICAgXSwKICAgICJzbHVnIjogInBhcGVyLW1hcmlvLXRoZS10aG91c2FuZC15ZWFyLWRvb3IiLAogICAgInN1bW1hcnkiOiAiV2hhdCBTbGVlcHMgQmVoaW5kIHRoZSBEb29yPyBcbiBcblRpbWUgcGFzc2VzLCB0aGUgcGFnZXMgdHVybuKApmFuZCBhIG5ldyBjaGFwdGVyIHVuZm9sZHMgaW4gYW4gdW5mYW1pbGlhciBsYW5kISBHZXQgcmVhZHkgZm9yIGEgdHdvLWRpbWVuc2lvbmFsIHJvbGUtcGxheWluZyBhZHZlbnR1cmUgZm9yIHRoZSBhZ2VzIGFzIE1hcmlvIHJldHVybnMgdG8gcGFwZXIgZm9ybSB0byBkaXNjb3ZlciBhIG15c3RlcnkgdGhhdCBzbGVlcHMgYmVoaW5kIGFuIGFuY2llbnQsIGxlZ2VuZGFyeSBwb3J0YWwgY2FsbGVkIHRoZSBUaG91c2FuZC1ZZWFyIERvb3IuIFRoZSBxdWVzdCBpcyBsb25nLCB0aGUgZGFuZ2VycyBtYW55LCBhbmQgdGhpcyB0aW1lLCBNYXJpbyB3aWxsIGhhdmUgdG8gbWFrZSBmdWxsIHVzZSBvZiBoaXMgcGFwZXJ5IHF1YWxpdGllcyBqdXN0IHRvIHN1cnZpdmUuIFxuIFxuVGFrZSB0byB0aGUgc3RhZ2UhIEltcHJlc3NpbmcgdGhlIGNyb3dkIGJ1aWxkcyBwb3dlciBmb3Igc3VwZXIgYXR0YWNrcywgYnV0IGRvbuKAmXQgZGlzYXBwb2ludCB0aGUgYXVkaWVuY2UsIG9yIHlvdeKAmWxsIHBheSEgXG4gXG5ObyBuZWVkIHRvIGdvIGl0IGFsb25lISBZb3XigJlsbCBuZWVkIHRvIHJlbHkgb24gc2lkZWtpY2tzIHRvIHN1cnZpdmUsIGFuZCBldmVuIGVuZW1pZXMgaGF2ZSByb2xlcyB0byBwbGF54oCmIFxuIFxuRG9u4oCZdCBmb2xkIHVuZGVyIHByZXNzdXJlISBGb2xkIGludG8gYSBwYXBlciBhaXJwbGFuZSwgdHVybiBzaWRld2F5cyB0byBzbGlwIHRocm91Z2ggY3JhY2tzLCBhbmQgbXVjaCBtb3JlLiBcbiBcblN0YXkgb24geW91ciB0b2VzISBTdGFtcCBmb2VzLCBzd2luZyB5b3VyIGhhbW1lciwgYW5kIHVzZSB0aW1lbHkgYnV0dG9uIHByZXNzZXMgdG8gZG8gZGFtYWdlISIsCiAgICAidGFncyI6IFsKICAgICAgMSwKICAgICAgMTcsCiAgICAgIDI3LAogICAgICAyNjg0MzU0NjgsCiAgICAgIDI2ODQzNTQ4NywKICAgICAgNTM2ODcwOTI4LAogICAgICA1MzY4NzEwNDksCiAgICAgIDUzNjg3MTEyNywKICAgICAgNTM2ODcxMTM4LAogICAgICA1MzY4NzEyMDgsCiAgICAgIDUzNjg3MTIxMywKICAgICAgNTM2ODcxMjQ0LAogICAgICA1MzY4NzEyNjIsCiAgICAgIDUzNjg3MTMwNiwKICAgICAgNTM2ODcxMzI3LAogICAgICA1MzY4NzEzOTAsCiAgICAgIDUzNjg3MTQ3MCwKICAgICAgNTM2ODcxNTAxLAogICAgICA1MzY4NzE1MDYsCiAgICAgIDUzNjg3MTU5OSwKICAgICAgNTM2ODcxNjcwLAogICAgICA1MzY4NzE5MzEsCiAgICAgIDUzNjg3MTkzOCwKICAgICAgNTM2ODcxOTM5LAogICAgICA1MzY4NzE5NjksCiAgICAgIDUzNjg3MjAxMCwKICAgICAgNTM2ODcyMjAxLAogICAgICA1MzY4NzIyMzIsCiAgICAgIDUzNjg3MjI2MCwKICAgICAgNTM2ODcyMjkzLAogICAgICA1MzY4NzIzMDcsCiAgICAgIDUzNjg3MjQzNSwKICAgICAgNTM2ODcyNTk0LAogICAgICA1MzY4NzI2NDcsCiAgICAgIDUzNjg3MjY0OSwKICAgICAgNTM2ODcyNzk4LAogICAgICA1MzY4NzI4MTAsCiAgICAgIDUzNjg3Mjk1OSwKICAgICAgNTM2ODcyOTgzLAogICAgICA1MzY4NzMwMjQsCiAgICAgIDUzNjg3MzA2NCwKICAgICAgNTM2ODczMDc3LAogICAgICA1MzY4NzMxMTEsCiAgICAgIDUzNjg3MzE4NiwKICAgICAgNTM2ODczMzI3LAogICAgICA1MzY4NzMzNTIsCiAgICAgIDUzNjg3MzQ3MywKICAgICAgNTM2ODczNTEzLAogICAgICA1MzY4NzM1MTYsCiAgICAgIDUzNjg3MzY3MSwKICAgICAgNTM2ODczOTczLAogICAgICA1MzY4NzQyMDksCiAgICAgIDUzNjg3NDM5OCwKICAgICAgNTM2ODc1MDU1LAogICAgICA1MzY4NzUwNTYsCiAgICAgIDUzNjg3NTA3MywKICAgICAgNTM2ODc1MDc0LAogICAgICA1MzY4NzUwODMsCiAgICAgIDUzNjg3NTA5NCwKICAgICAgNTM2ODc1MTMwLAogICAgICA1MzY4NzUxMzEsCiAgICAgIDUzNjg3NTE1MSwKICAgICAgNTM2ODc1MTU2LAogICAgICA1MzY4NzUxNzgsCiAgICAgIDUzNjg3NTE4MywKICAgICAgNTM2ODc1MTk2LAogICAgICA1MzY4NzUyMDAsCiAgICAgIDUzNjg3NTI0NCwKICAgICAgNTM2ODc1MjYyLAogICAgICA1MzY4NzUyNjUsCiAgICAgIDUzNjg3NTI3MSwKICAgICAgNTM2ODc1Mjg2LAogICAgICA1MzY4NzUzMDgsCiAgICAgIDUzNjg3NTMwOSwKICAgICAgNTM2ODc1MzEwLAogICAgICA1MzY4NzUzMTQsCiAgICAgIDUzNjg3NTMxNywKICAgICAgNTM2ODc1MzI2LAogICAgICA1MzY4NzUzMzAsCiAgICAgIDUzNjg3NTM0MCwKICAgICAgNTM2ODc1MzgwLAogICAgICA1MzY4NzUzOTEsCiAgICAgIDUzNjg3NTM5MiwKICAgICAgNTM2ODc1Mzk2LAogICAgICA1MzY4NzU0MjEsCiAgICAgIDUzNjg3NTQ1NSwKICAgICAgNTM2ODc1NDg1LAogICAgICA1MzY4NzU1MDIsCiAgICAgIDUzNjg3NTUwNSwKICAgICAgNTM2ODc1NTI0LAogICAgICA1MzY4NzU1MjUsCiAgICAgIDUzNjg3NTYxMywKICAgICAgNTM2ODc1NjIxLAogICAgICA1MzY4NzU2MzIsCiAgICAgIDUzNjg3NTYzOSwKICAgICAgNTM2ODc1NjQ3LAogICAgICA1MzY4NzU2NTAsCiAgICAgIDUzNjg3NTY4NCwKICAgICAgNTM2ODc1Njk5LAogICAgICA1MzY4NzU3MTMsCiAgICAgIDUzNjg3NTc0MCwKICAgICAgNTM2ODc1NzQxLAogICAgICA1MzY4NzU3NTgsCiAgICAgIDUzNjg3NTc2MSwKICAgICAgNTM2ODc1NzY0LAogICAgICA1MzY4NzU3NjgsCiAgICAgIDUzNjg3NTc3OSwKICAgICAgNTM2ODc1ODAwLAogICAgICA1MzY4NzU4MDMsCiAgICAgIDUzNjg3NTgyMywKICAgICAgNTM2ODc1ODM3LAogICAgICA1MzY4NzU4NzAsCiAgICAgIDUzNjg3NTkwMywKICAgICAgNTM2ODc1OTI0LAogICAgICA1MzY4NzU5MjgsCiAgICAgIDUzNjg3NTkzNCwKICAgICAgNTM2ODc1OTUyLAogICAgICA1MzY4NzYwMjcsCiAgICAgIDUzNjg3NjA2OSwKICAgICAgNTM2ODc2MDc2LAogICAgICA1MzY4NzYwODIsCiAgICAgIDUzNjg3NjA4MywKICAgICAgNTM2ODc2MDg0LAogICAgICA1MzY4NzYxMDUsCiAgICAgIDUzNjg3NjEzMiwKICAgICAgNTM2ODc2MTcwLAogICAgICA1MzY4NzYyNDIsCiAgICAgIDUzNjg3NjI3MCwKICAgICAgNTM2ODc2Mjc0LAogICAgICA1MzY4NzYyODcsCiAgICAgIDUzNjg3NjI5OSwKICAgICAgNTM2ODc2MzAzLAogICAgICA1MzY4NzYzMTYsCiAgICAgIDUzNjg3NjM1MywKICAgICAgNTM2ODc2MzU3LAogICAgICA1MzY4NzY0NDgsCiAgICAgIDUzNjg3NjQ1MCwKICAgICAgNTM2ODc2NDc5LAogICAgICA1MzY4NzY0OTAsCiAgICAgIDUzNjg3NjQ5OSwKICAgICAgNTM2ODc2NTA2LAogICAgICA1MzY4NzY1MTIsCiAgICAgIDUzNjg3NjU3MCwKICAgICAgNTM2ODc2NTcxLAogICAgICA1MzY4NzY1ODksCiAgICAgIDUzNjg3NjYxNSwKICAgICAgNTM2ODc2NjcxLAogICAgICA1MzY4NzY3MTMsCiAgICAgIDUzNjg3NjcxNSwKICAgICAgNTM2ODc2ODc5LAogICAgICA1MzY4NzY4ODAsCiAgICAgIDUzNjg3NjkxMCwKICAgICAgNTM2ODc2OTE5LAogICAgICA1MzY4NzY5NTIsCiAgICAgIDUzNjg3Njk3NCwKICAgICAgNTM2ODc2OTk2LAogICAgICA1MzY4NzcwMTQsCiAgICAgIDUzNjg3NzAzNSwKICAgICAgNTM2ODc3MDQ4LAogICAgICA1MzY4NzcwNDksCiAgICAgIDUzNjg3NzA1MCwKICAgICAgNTM2ODc3MDUxLAogICAgICA1MzY4NzcwNTIsCiAgICAgIDUzNjg3NzA1NSwKICAgICAgNTM2ODc3MDU3LAogICAgICA1MzY4NzcwNTksCiAgICAgIDUzNjg3NzA2MCwKICAgICAgNTM2ODc3MDYxLAogICAgICA1MzY4NzcwNjIsCiAgICAgIDUzNjg3NzA2NSwKICAgICAgNTM2ODc3MDY2LAogICAgICA1MzY4NzcwNjcsCiAgICAgIDUzNjg3NzA2OCwKICAgICAgNTM2ODc3MDY5LAogICAgICA1MzY4NzcwNzEsCiAgICAgIDUzNjg3NzA3MiwKICAgICAgNTM2ODc3MDg0LAogICAgICA1MzY4NzcwODgsCiAgICAgIDUzNjg3NzA4OSwKICAgICAgNTM2ODc3MDkwLAogICAgICA1MzY4NzcwOTEsCiAgICAgIDUzNjg3NzEwNCwKICAgICAgNTM2ODc3MTgyLAogICAgICA1MzY4NzcyMzAsCiAgICAgIDUzNjg3NzMwNSwKICAgICAgNTM2ODc3NDM0LAogICAgICA1MzY4Nzc0NTEsCiAgICAgIDUzNjg3NzQ1MywKICAgICAgNTM2ODc3NTE2LAogICAgICA1MzY4Nzc1MzUsCiAgICAgIDUzNjg3NzU2NSwKICAgICAgNTM2ODc3NTc1LAogICAgICA1MzY4Nzc1ODksCiAgICAgIDUzNjg3NzY1NywKICAgICAgNTM2ODc3Njk2LAogICAgICA1MzY4Nzc3MDYsCiAgICAgIDUzNjg3NzcxMCwKICAgICAgNTM2ODc3NzE4LAogICAgICA1MzY4Nzc3MzYsCiAgICAgIDUzNjg3Nzc2MCwKICAgICAgNTM2ODc3ODA0LAogICAgICA1MzY4Nzc4MTUsCiAgICAgIDUzNjg3NzgyMiwKICAgICAgNTM2ODc4MDY1LAogICAgICA1MzY4NzgwNzgsCiAgICAgIDUzNjg3ODA4OCwKICAgICAgNTM2ODc4MTQ4LAogICAgICA1MzY4NzgxNTIsCiAgICAgIDUzNjg3ODE1MywKICAgICAgNTM2ODc4MTU0LAogICAgICA1MzY4NzgxNTcsCiAgICAgIDUzNjg3ODE2MCwKICAgICAgNTM2ODc4MjU3LAogICAgICA1MzY4NzgyODQsCiAgICAgIDUzNjg3ODMwOCwKICAgICAgNTM2ODc4MzI4LAogICAgICA1MzY4NzgzOTUsCiAgICAgIDUzNjg3ODQ2NCwKICAgICAgNTM2ODc4NDY1LAogICAgICA1MzY4Nzg1MTUsCiAgICAgIDUzNjg3ODUzMiwKICAgICAgNTM2ODc4NTM5LAogICAgICA1MzY4Nzg1NjUsCiAgICAgIDUzNjg3ODYwNiwKICAgICAgNTM2ODc5MDk4LAogICAgICA1MzY4NzkxMDUsCiAgICAgIDUzNjg3OTc1MCwKICAgICAgNTM2ODc5NzkxLAogICAgICA1MzY4Nzk4MDYsCiAgICAgIDUzNjg3OTkwNiwKICAgICAgNTM2ODgwMTU5LAogICAgICA1MzY4ODAyNTEsCiAgICAgIDUzNjg4MDMyOCwKICAgICAgNTM2ODgwMzYwLAogICAgICA1MzY4ODA0MDUsCiAgICAgIDUzNjg4MDQyNSwKICAgICAgNTM2ODgwNDI4LAogICAgICA1MzY4ODA0NDEsCiAgICAgIDUzNjg4MDUxNSwKICAgICAgNTM2ODgwOTY4LAogICAgICA1MzY4ODEzNTQsCiAgICAgIDUzNjg4MTk4OCwKICAgICAgNTM2ODgyMjkwLAogICAgICA1MzY4ODI0OTcsCiAgICAgIDUzNjg4MjgyOSwKICAgICAgNTM2ODgyODMyLAogICAgICA1MzY4ODI4NDUsCiAgICAgIDUzNjg4MzEyMiwKICAgICAgNTM2ODgzMTU0LAogICAgICA1MzY4ODMyNjksCiAgICAgIDUzNjg4MzU2NywKICAgICAgNTM2ODg0MDA2LAogICAgICA1MzY4ODQwMjIsCiAgICAgIDUzNjg4NDc0MSwKICAgICAgNTM2ODg1NDg4LAogICAgICA1MzY4ODU5MDEsCiAgICAgIDUzNjg4NjAwMiwKICAgICAgNTM2ODg2MzEwLAogICAgICA1MzY4ODY3NjAsCiAgICAgIDUzNjg4NzAwOSwKICAgICAgNTM2ODg3MTA4LAogICAgICA1MzY4ODcxMDksCiAgICAgIDUzNjg4NzExMAogICAgXSwKICAgICJ0aGVtZXMiOiBbCiAgICAgIDEsCiAgICAgIDE3LAogICAgICAyNwogICAgXSwKICAgICJ0aW1lX3RvX2JlYXQiOiAzMzQ5LAogICAgInRvdGFsX3JhdGluZyI6IDkxLjIyNDUwODMwMjQ1NDIsCiAgICAidG90YWxfcmF0aW5nX2NvdW50IjogMjA5LAogICAgInVwZGF0ZWRfYXQiOiAxNTk0NTk4NDAwLAogICAgInVybCI6ICJodHRwczovL3d3dy5pZ2RiLmNvbS9nYW1lcy9wYXBlci1tYXJpby10aGUtdGhvdXNhbmQteWVhci1kb29yIiwKICAgICJ2aWRlb3MiOiBbCiAgICAgIDk5MTEsCiAgICAgIDk5MTIKICAgIF0sCiAgICAid2Vic2l0ZXMiOiBbCiAgICAgIDc1MTQKICAgIF0sCiAgICAiY2hlY2tzdW0iOiAiNWI4ZjQ1NDQtMmU0NS04Y2MxLTZlZDctY2Y5MDY3NGQ2ZTYwIgogIH0KXQ==
+  recorded_at: Thu, 30 Jul 2020 21:27:13 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383313;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d88ba4bd1577e19100f3c5ba31f3fc7d81596144433; expires=Sat, 29-Aug-20
+        21:27:13 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433852ab00000f3a9938c200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb22997788b0f3a-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383313,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 480,
+            "image_id": "sc87rl",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87rl.jpg",
+            "width": 640,
+            "checksum": "062a4fea-9989-a84a-8a44-8ac00c9d6249"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:14 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383314;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:14 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5871f7af393592bee26f3ec5dd8b95201596144434; expires=Sat, 29-Aug-20
+        21:27:14 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433853a50000d29601999200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229990e5ed296-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383314,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 480,
+            "image_id": "sc87rm",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87rm.jpg",
+            "width": 640,
+            "checksum": "41f4ab4c-e955-ccba-77f6-ecb3612a1d2f"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:14 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383315;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:14 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6b3842b4918bdc871d5acf815743c2951596144434; expires=Sat, 29-Aug-20
+        21:27:14 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433854a300000f06bb337200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2299a9fc40f06-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383315,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 479,
+            "image_id": "sc87rn",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87rn.jpg",
+            "width": 640,
+            "checksum": "a9c4c445-e073-4c92-b013-4be5294f0394"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:14 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383316;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:14 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5aa61fbc429c34a57f2e4b1be7c1c19f1596144434; expires=Sat, 29-Aug-20
+        21:27:14 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433855c00000c81228a64200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2299c691ac812-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383316,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 479,
+            "image_id": "sc87ro",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87ro.jpg",
+            "width": 640,
+            "checksum": "8eb34bfc-b9b4-0da4-c7c8-576687e4c8ef"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:14 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383317;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:15 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d03887cfa745c029fb655c0bb7a25da7f1596144434; expires=Sat, 29-Aug-20
+        21:27:14 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433856b80000ecbb9999d200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2299dfc35ecbb-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383317,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 479,
+            "image_id": "sc87rp",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87rp.jpg",
+            "width": 640,
+            "checksum": "50237696-4fda-8f32-002c-d883d9903f2a"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:15 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383318;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:15 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9fc2d40371f0a2d2b89554928af202531596144435; expires=Sat, 29-Aug-20
+        21:27:15 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433857b700000ede2cae5200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb2299f8e650ede-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383318,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 480,
+            "image_id": "sc87rq",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87rq.jpg",
+            "width": 640,
+            "checksum": "6b850571-e2eb-1aa3-3222-b027777ded52"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:15 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/screenshots
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 383319;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:15 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d58d838972187f5484d1bc2e94a793a701596144435; expires=Sat, 29-Aug-20
+        21:27:15 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433858b90000eca28a343200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229a12c00eca2-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 383319,
+            "alpha_channel": false,
+            "animated": false,
+            "game": 2342,
+            "height": 480,
+            "image_id": "sc87rr",
+            "url": "//images.igdb.com/igdb/image/upload/t_thumb/sc87rr.jpg",
+            "width": 640,
+            "checksum": "70208ab1-ee79-7ac0-0f66-4654dd7d7111"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:15 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/themes
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 1;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:15 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc4b7c87ea806b0874a18128ba83e07a01596144435; expires=Sat, 29-Aug-20
+        21:27:15 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '04433859c600009b54f335f200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229a2df379b54-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 1,
+            "created_at": 1322524800,
+            "name": "Action",
+            "slug": "action",
+            "updated_at": 1323216000,
+            "url": "https://www.igdb.com/themes/action",
+            "checksum": "c177e0ff-f29a-2a2e-fce5-f945258ceb59"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:15 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/themes
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 35;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:16 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5b8b3bfa26e6d5a54b26ce84800974b61596144435; expires=Sat, 29-Aug-20
+        21:27:15 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443385acc0000592b47bc7200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229a478f4592b-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 35,
+            "created_at": 1326758400,
+            "name": "Kids",
+            "slug": "kids",
+            "updated_at": 1326758400,
+            "url": "https://www.igdb.com/themes/kids",
+            "checksum": "0d518e1e-a2be-1b31-40ab-6bd28ec850f1"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:16 GMT
+- request:
+    method: get
+    uri: https://api-v3.igdb.com/game_videos
+    body:
+      encoding: UTF-8
+      string: fields *; where id = 35661;
+    headers:
+      User-Key:
+      - GAME_API
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jul 2020 21:27:16 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2498dfabda065083f0a14e4adaf15e6b1596144436; expires=Sat, 29-Aug-20
+        21:27:16 GMT; path=/; domain=.igdb.com; HttpOnly; SameSite=Lax; Secure
+      X-Count:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0443385bd80000ecc334177200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5bb229a62cfdecc3-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "id": 35661,
+            "game": 2342,
+            "name": "Gameplay Video",
+            "video_id": "ASWgJvuQhTA",
+            "checksum": "dd744488-861a-ddc0-66e2-c5a2f23a42cf"
+          }
+        ]
+  recorded_at: Thu, 30 Jul 2020 21:27:16 GMT
+recorded_with: VCR 6.0.0
