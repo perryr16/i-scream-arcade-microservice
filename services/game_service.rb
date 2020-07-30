@@ -20,17 +20,17 @@ class GameService
     body = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def get_games_by_keywords(ids)
-    id_list =  ids.join(",")
-    response = conn.get('/games') do |res|
-      res.body = "fields name, summary, rating, keywords; 
-                  where keywords = [#{id_list}]
-                  & rating > 1; 
-                  sort rating desc;"
-      # NOTE: [] is AND, () is OR
-    end
-    body = JSON.parse(response.body, symbolize_names: true)
-  end
+  # def get_games_by_keywords(ids)
+  #   id_list =  ids.join(",")
+  #   response = conn.get('/games') do |res|
+  #     res.body = "fields name, summary, rating, keywords; 
+  #                 where keywords = [#{id_list}]
+  #                 & rating > 1; 
+  #                 sort rating desc;"
+  #     # NOTE: [] is AND, () is OR
+  #   end
+  #   body = JSON.parse(response.body, symbolize_names: true)
+  # end
 
   def get_keyid(word)
     response = conn.get("/keywords") do |res|

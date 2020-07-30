@@ -53,7 +53,7 @@ RSpec.describe IScreamMicroservice do
     exp_similars = "\"similars\":[\"Super Mario Bros.\",\"Crash Team Racing\",\"Crash Nitro Kart\",\"Super Mario Kart\",\"Mario Kart: Super Circuit\",\"Mario Kart DS\",\"Mario Kart 7\",\"Mario Kart 8\",\"Paper Mario: The Thousand-Year Door\"]"
     exp_screenshots = "\"screenshots\":[\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rl.jpg\",\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rm.jpg\",\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rn.jpg\""
     exp_themes = "\"themes\":[\"Action\",\"Kids\"]"
-    exp_videos = "\"video\":\"ASWgJvuQhTA\""
+    exp_video = "\"video\":\"ASWgJvuQhTA\""
 
     expect(last_response.body).to include(exp_age_rating)
     expect(last_response.body).to include(exp_release_date)
@@ -69,11 +69,35 @@ RSpec.describe IScreamMicroservice do
     expect(last_response.body).to include(exp_similars)
     expect(last_response.body).to include(exp_screenshots)
     expect(last_response.body).to include(exp_themes)
-    expect(last_response.body).to include(exp_videos)
-
+    expect(last_response.body).to include(exp_video)
 
   end
-  
+
+
+   it "returns games by 2 keyword" do
+    get '/keywords_to_games/spider,ghost'
+
+    body = JSON.parse(last_response.body, symbolize_names: true)
+    expect(body[:data].length).to eq(10)
+    expect(body[:data][0][:data][:release_date].present?).to eq(true)
+    expect(body[:data][4][:data][:release_date].present?).to eq(true)
+    expect(body[:data][9][:data][:release_date].present?).to eq(true)
+
+    game1_keywords = body[:data][0][:data][:keywords]
+    game5_keywords = body[:data][4][:data][:keywords]
+    game10_keywords = body[:data][9][:data][:keywords]
+
+    exp_keyids = [4235,8972]
+    expect((game1_keywords & exp_keyids).present?).to eq(true)
+    expect((game5_keywords & exp_keyids).present?).to eq(true)
+    expect((game10_keywords & exp_keyids).present?).to eq(true)
+   end
+
+   it "returns nil by if bad keyword" do
+    get '/keywords_to_games/not_a_keyword_2f2asdf4'
+
+    expect(last_response.body).to eq("\"Invalid Keyword\"")
+   end
   
 
 end

@@ -1,5 +1,8 @@
 ENV['RACK_ENV'] = 'test'
 require "./config/environment"
+
+SimpleCov.start
+
 RSpec.configure do |config|
   config.include Rack::Test::Methods
   config.before(:each) do

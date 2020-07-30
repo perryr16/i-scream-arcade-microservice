@@ -1,0 +1,21 @@
+language: ruby
+cache: bundler
+rbenv:
+- 2.5.3
+before_install:
+- gem install bundler
+addons:
+  chrome: stable
+dist: xenial
+script:
+- bundle exec rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: w/6Ez9woZNvU6Mhb6vg6OjTtBro+zIecW+Qoox0OxV+9Zjmg3Q+Yn6rbPR1Xl6Lf8tAhH2lJh/yeuEOaEOrt8DxdIrSCjx0oANOhRlMMrv6N45+yY0ecPevLDfcgfbdYPpLcY/P+RnavKhFIhZRXnTPkomOKzVGjf0fXlUhDovL6stbXOwqsY49wGr3ffeLu00qVDwGmQCFdEuWhjmgXk09/ebVxk+c7thCRD3/ErISvcmr96tdzf5wEiTIQkayT9ZUkICz7y7kfB02fWtpSBW53waT5rpeJNcd8wWnetVfUBcV/51qw8jt7t6oXPw4nOwZ/0BIiaQjfE6YiEtPWpvxARJmBDGcWG0pK4loY8TqJZeYBmcVvYjQ8VhK9kEW+vgxFl/dt9KEWL6b2wAaQpH8K2ouenzR4Dcsf1f0x304/8h+HpMKayq1voH3nQEGXuWmihUcEuASTn3MNnyZx1zHY/jgkRq6X+7B40uLKspYL9eSVpu+sh0FrzeyuKl+i/TjRtINUMn7E8nbHQkGuDbsHUw0x3h+TVmtBbl+fDXvx6E/opfkEzoisIM/biXFKugE2etd45giDLsMIP/70ajD9dGJuYWuI1bNa2VpDhSbDC0l2BxkL0LP2A1HztSksgVLofv7FMKQZfxG8sTPL6+VLACngbgYThJwahX6FK2I=
+  app: i-scream-microservice
+  on:
+    repo: perryr16/i-scream-arcade-microservice
+
+
+
