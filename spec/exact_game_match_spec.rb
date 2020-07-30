@@ -53,7 +53,7 @@ RSpec.describe IScreamMicroservice do
     exp_similars = "\"similars\":[\"Super Mario Bros.\",\"Crash Team Racing\",\"Crash Nitro Kart\",\"Super Mario Kart\",\"Mario Kart: Super Circuit\",\"Mario Kart DS\",\"Mario Kart 7\",\"Mario Kart 8\",\"Paper Mario: The Thousand-Year Door\"]"
     exp_screenshots = "\"screenshots\":[\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rl.jpg\",\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rm.jpg\",\"https://images.igdb.com/igdb/image/upload/t_thumb/sc87rn.jpg\""
     exp_themes = "\"themes\":[\"Action\",\"Kids\"]"
-    exp_videos = "\"videos\":\"https://www.youtube.com/watch?v=ASWgJvuQhTA\""
+    exp_videos = "\"video\":\"ASWgJvuQhTA\""
 
     expect(last_response.body).to include(exp_age_rating)
     expect(last_response.body).to include(exp_release_date)
