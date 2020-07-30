@@ -5,9 +5,7 @@ class GameResults
     GameService.new
   end
 
-  def game_params_by_name(game_name)
-    return "Invalid Game Name" if service.get_games_by_name(game_name).empty?
-    params = service.get_games_by_name(game_name)[0]
+  def game_result(params)
     result = {data: {
       age_ratings:  run_array(:get_age_ratings, :rating, params[:age_ratings]), # array of ids
       release_date: Time.at(params[:first_release_date]).year, # Unix Time
@@ -26,6 +24,12 @@ class GameResults
       # video:       "https://www.youtube.com/watch?v=#{youtube_id(params[:videos][0])}" # good -> array of ids
       video:        "#{youtube_id(params[:videos])}" # good -> array of ids
     }}
+  end
+
+  def game_params_by_name(game_name)
+    return "Invalid Game Name" if service.get_games_by_name(game_name).empty?
+    params = service.get_games_by_name(game_name)[0]
+    game_result(params)
   end
 
   def run_array(method, key, array)
@@ -81,23 +85,7 @@ class GameResults
     game_arrays = service.get_games_by_keyids(ids)
     game_arrays.map do |game| 
       # binding.pry
-    result = { data: {
-      age_ratings:  run_array(:get_age_ratings, :rating, game[:age_ratings]), # array of ids
-      release_date: Time.at(game[:first_release_date]).year, # Unix Time
-      cover:        "https:#{cover_url(game[:cover])}",
-      popularity:   game[:popularity], # good
-      summary:      game[:summary], # good
-      name:         game[:name], # good
-      total_rating: game[:total_rating], # good
-      categories:   game[:category], # got 0
-      genres:       run_array(:get_game_genres, :name, game[:genres]), # array of ids
-      keywords:     game[:keywords], # array of ids -- several hundred :(
-      platforms:    run_array(:get_platforms, :name, game[:platforms]), # array of ids
-      similars:     run_array(:get_games_by_id, :name, game[:similar_games]), # array of ids
-      screenshots:  format_screenshots(game), # array of ids
-      themes:       run_array(:get_game_themes, :name, game[:themes]), # array of ids
-      videos:       "https://www.youtube.com/watch?v=#{youtube_id(game[:videos])}" # good -> array of ids
-      }}
+      game_result(game)
     end
   end
 
